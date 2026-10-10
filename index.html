@@ -1,0 +1,1994 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BA Command Center | Business Analyst Portfolio</title>
+<meta name="description" content="Interactive Business Analyst portfolio: career project analytics, sprint tracker, and AI-assisted user stories, diagrams, UAT matrices and wireframes.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%232563EB'/%3E%3Cpath d='M22 70V52M42 70V34M62 70V44M82 70V22' stroke='white' stroke-width='9' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.0/dist/mermaid.min.js"></script>
+<style id="tailwind-build">*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.collapse{visibility:collapse}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0}.inset-y-0{top:0;bottom:0}.bottom-4{bottom:1rem}.left-0{left:0}.right-4{right:1rem}.top-0{top:0}.z-20{z-index:20}.z-30{z-index:30}.z-40{z-index:40}.z-\[100\]{z-index:100}.col-span-2{grid-column:span 2/span 2}.mx-auto{margin-left:auto;margin-right:auto}.-ml-2{margin-left:-.5rem}.-ml-5{margin-left:-1.25rem}.mb-1{margin-bottom:.25rem}.mb-2{margin-bottom:.5rem}.mb-2\.5{margin-bottom:.625rem}.mb-3{margin-bottom:.75rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.mb-6{margin-bottom:1.5rem}.ml-4{margin-left:1rem}.ml-auto{margin-left:auto}.mt-0\.5{margin-top:.125rem}.mt-1{margin-top:.25rem}.mt-2{margin-top:.5rem}.mt-3{margin-top:.75rem}.mt-4{margin-top:1rem}.mt-5{margin-top:1.25rem}.mt-6{margin-top:1.5rem}.line-clamp-3{overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3}.block{display:block}.inline{display:inline}.flex{display:flex}.table{display:table}.grid{display:grid}.contents{display:contents}.hidden{display:none}.h-10{height:2.5rem}.h-16{height:4rem}.h-2{height:.5rem}.h-24{height:6rem}.h-3{height:.75rem}.h-4{height:1rem}.h-40{height:10rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-9{height:2.25rem}.h-\[clamp\(130px\2c 21vh\2c 256px\)\]{height:clamp(130px,21vh,256px)}.h-full{height:100%}.min-h-\[200px\]{min-height:200px}.min-h-\[420px\]{min-height:420px}.min-h-screen{min-height:100vh}.w-1\/3{width:33.333333%}.w-1\/4{width:25%}.w-10{width:2.5rem}.w-11\/12{width:91.666667%}.w-12{width:3rem}.w-16{width:4rem}.w-2{width:.5rem}.w-3\/4{width:75%}.w-4{width:1rem}.w-4\/5{width:80%}.w-64{width:16rem}.w-9{width:2.25rem}.w-full{width:100%}.min-w-0{min-width:0}.min-w-\[120px\]{min-width:120px}.min-w-\[160px\]{min-width:160px}.min-w-\[170px\]{min-width:170px}.min-w-\[180px\]{min-width:180px}.min-w-\[200px\]{min-width:200px}.min-w-\[220px\]{min-width:220px}.min-w-\[240px\]{min-width:240px}.min-w-\[260px\]{min-width:260px}.max-w-2xl{max-width:42rem}.max-w-\[1400px\]{max-width:1400px}.max-w-lg{max-width:32rem}.max-w-sm{max-width:24rem}.flex-1{flex:1 1 0%}.flex-shrink{flex-shrink:1}.shrink-0{flex-shrink:0}.border-collapse{border-collapse:collapse}.-translate-x-full{--tw-translate-x:-100%}.-translate-x-full,.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.resize{resize:both}.list-decimal{list-style-type:decimal}.list-none{list-style-type:none}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.items-baseline{align-items:baseline}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:.25rem}.gap-2{gap:.5rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-6{gap:1.5rem}.gap-x-3{-moz-column-gap:.75rem;column-gap:.75rem}.gap-x-4{-moz-column-gap:1rem;column-gap:1rem}.gap-x-5{-moz-column-gap:1.25rem;column-gap:1.25rem}.gap-y-1{row-gap:.25rem}.gap-y-5{row-gap:1.25rem}.space-y-0\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.125rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.125rem*var(--tw-space-y-reverse))}.space-y-2>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.5rem*var(--tw-space-y-reverse))}.space-y-4>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem*var(--tw-space-y-reverse))}.space-y-5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem*var(--tw-space-y-reverse))}.space-y-6>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem*var(--tw-space-y-reverse))}.self-center{align-self:center}.overflow-auto{overflow:auto}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.truncate{overflow:hidden;text-overflow:ellipsis}.truncate,.whitespace-nowrap{white-space:nowrap}.break-words{overflow-wrap:break-word}.rounded{border-radius:.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:.5rem}.rounded-xl{border-radius:.75rem}.rounded-b-2xl{border-bottom-right-radius:1rem;border-bottom-left-radius:1rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-r{border-right-width:1px}.border-t{border-top-width:1px}.border-amber-500\/30{border-color:rgba(245,158,11,.3)}.border-emerald-500\/10{border-color:rgba(16,185,129,.1)}.border-emerald-500\/20{border-color:rgba(16,185,129,.2)}.border-emerald-500\/30{border-color:rgba(16,185,129,.3)}.border-white\/10{border-color:hsla(0,0%,100%,.1)}.border-white\/5{border-color:hsla(0,0%,100%,.05)}.bg-\[\#10B981\]{--tw-bg-opacity:1;background-color:rgb(16 185 129/var(--tw-bg-opacity,1))}.bg-amber-500{--tw-bg-opacity:1;background-color:rgb(245 158 11/var(--tw-bg-opacity,1))}.bg-amber-500\/10{background-color:rgba(245,158,11,.1)}.bg-black\/40{background-color:rgba(0,0,0,.4)}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(16 185 129/var(--tw-bg-opacity,1))}.bg-emerald-500\/10{background-color:rgba(16,185,129,.1)}.bg-emerald-500\/15{background-color:rgba(16,185,129,.15)}.bg-emerald-500\/5{background-color:rgba(16,185,129,.05)}.bg-orange-500\/10{background-color:rgba(249,115,22,.1)}.bg-orange-500\/15{background-color:rgba(249,115,22,.15)}.bg-red-500\/10{background-color:rgba(239,68,68,.1)}.bg-slate-950\/60{background-color:rgba(2,6,23,.6)}.bg-slate-950\/70{background-color:rgba(2,6,23,.7)}.bg-white\/10{background-color:hsla(0,0%,100%,.1)}.bg-white\/20{background-color:hsla(0,0%,100%,.2)}.bg-white\/5{background-color:hsla(0,0%,100%,.05)}.bg-gradient-to-br{background-image:linear-gradient(to bottom right,var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops))}.from-emerald-950{--tw-gradient-from:#022c22 var(--tw-gradient-from-position);--tw-gradient-to:rgba(2,44,34,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-gray-950{--tw-gradient-from:#030712 var(--tw-gradient-from-position);--tw-gradient-to:rgba(3,7,18,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.via-slate-900{--tw-gradient-to:rgba(15,23,42,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),#0f172a var(--tw-gradient-via-position),var(--tw-gradient-to)}.to-emerald-900\/70{--tw-gradient-to:rgba(6,78,59,.7) var(--tw-gradient-to-position)}.to-emerald-950{--tw-gradient-to:#022c22 var(--tw-gradient-to-position)}.bg-fixed{background-attachment:fixed}.p-2{padding:.5rem}.p-3{padding:.75rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.px-1{padding-left:.25rem;padding-right:.25rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-5{padding-top:1.25rem;padding-bottom:1.25rem}.pb-2{padding-bottom:.5rem}.pb-4{padding-bottom:1rem}.pb-8{padding-bottom:2rem}.pt-0{padding-top:0}.pt-1{padding-top:.25rem}.pt-5{padding-top:1.25rem}.pt-6{padding-top:1.5rem}.text-center{text-align:center}.text-right{text-align:right}.font-sans{font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,sans-serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.italic{font-style:italic}.leading-6{line-height:1.5rem}.leading-8{line-height:2rem}.leading-relaxed{line-height:1.625}.leading-snug{line-height:1.375}.leading-tight{line-height:1.25}.tracking-wide{letter-spacing:.025em}.text-amber-300{--tw-text-opacity:1;color:rgb(252 211 77/var(--tw-text-opacity,1))}.text-emerald-300{--tw-text-opacity:1;color:rgb(110 231 183/var(--tw-text-opacity,1))}.text-emerald-400{--tw-text-opacity:1;color:rgb(52 211 153/var(--tw-text-opacity,1))}.text-gray-100{--tw-text-opacity:1;color:rgb(243 244 246/var(--tw-text-opacity,1))}.text-gray-200{--tw-text-opacity:1;color:rgb(229 231 235/var(--tw-text-opacity,1))}.text-gray-300{--tw-text-opacity:1;color:rgb(209 213 219/var(--tw-text-opacity,1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity,1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128/var(--tw-text-opacity,1))}.text-orange-300{--tw-text-opacity:1;color:rgb(253 186 116/var(--tw-text-opacity,1))}.text-orange-400{--tw-text-opacity:1;color:rgb(251 146 60/var(--tw-text-opacity,1))}.text-red-300{--tw-text-opacity:1;color:rgb(252 165 165/var(--tw-text-opacity,1))}.text-red-400{--tw-text-opacity:1;color:rgb(248 113 113/var(--tw-text-opacity,1))}.text-red-500{--tw-text-opacity:1;color:rgb(239 68 68/var(--tw-text-opacity,1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.shadow-lg{--tw-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color)}.shadow-lg,.shadow-sm{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgba(0,0,0,.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color)}.shadow-emerald-500\/10{--tw-shadow-color:rgba(16,185,129,.1);--tw-shadow:var(--tw-shadow-colored)}.shadow-emerald-500\/40{--tw-shadow-color:rgba(16,185,129,.4);--tw-shadow:var(--tw-shadow-colored)}.outline{outline-style:solid}.blur{--tw-blur:blur(8px)}.blur,.invert{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.invert{--tw-invert:invert(100%)}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-xl{--tw-backdrop-blur:blur(24px)}.backdrop-blur-xl,.backdrop-filter{-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.duration-200{transition-duration:.2s}.duration-300{transition-duration:.3s}.duration-500{transition-duration:.5s}.hover\:bg-amber-500\/20:hover{background-color:rgba(245,158,11,.2)}.hover\:bg-emerald-500\/20:hover{background-color:rgba(16,185,129,.2)}.hover\:bg-slate-800\/50:hover{background-color:rgba(30,41,59,.5)}.hover\:bg-white\/10:hover{background-color:hsla(0,0%,100%,.1)}@media (min-width:640px){.sm\:col-span-1{grid-column:span 1/span 1}.sm\:col-span-2{grid-column:span 2/span 2}.sm\:block{display:block}.sm\:inline{display:inline}.sm\:hidden{display:none}.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.sm\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.sm\:flex-row{flex-direction:row}.sm\:justify-start{justify-content:flex-start}.sm\:text-left{text-align:left}.sm\:text-3xl{font-size:1.875rem;line-height:2.25rem}}@media (min-width:768px){.md\:inline{display:inline}.md\:hidden{display:none}.md\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.md\:gap-3{gap:.75rem}.md\:px-8{padding-left:2rem;padding-right:2rem}.md\:text-lg{font-size:1.125rem;line-height:1.75rem}}@media (min-width:1024px){.lg\:col-span-2{grid-column:span 2/span 2}.lg\:ml-64{margin-left:16rem}.lg\:hidden{display:none}.lg\:translate-x-0{--tw-translate-x:0px;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.lg\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}}@media (min-width:1280px){.xl\:sticky{position:sticky}.xl\:top-24{top:6rem}.xl\:col-span-2{grid-column:span 2/span 2}.xl\:col-span-3{grid-column:span 3/span 3}.xl\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.xl\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.xl\:grid-cols-5{grid-template-columns:repeat(5,minmax(0,1fr))}}</style>
+<style>
+  :root { color-scheme: dark; --em: #10B981; --em-l: #34D399; --or: #F97316; }
+  html { scroll-behavior: smooth; }
+  body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; -webkit-font-smoothing: antialiased; }
+  body::before { content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0; background: radial-gradient(55% 45% at 88% 0%, rgba(16,185,129,.13), transparent 70%), radial-gradient(40% 40% at 0% 100%, rgba(16,185,129,.07), transparent 70%); }
+  #app { position: relative; z-index: 1; }
+  :focus-visible { outline: 2px solid var(--em); outline-offset: 2px; }
+
+  /* Views & motion */
+  .view { display: none; }
+  .view.active { display: block; animation: slideUp .35s ease both; }
+  @keyframes slideUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+  .fade-in { animation: fadeIn .3s ease both; }
+  .slide-up { animation: slideUp .35s ease both; }
+  @keyframes shimmer { 0% { background-position: 100% 50%; } 100% { background-position: 0 50%; } }
+  .skeleton { background: linear-gradient(90deg, rgba(255,255,255,.05) 25%, rgba(255,255,255,.13) 37%, rgba(255,255,255,.05) 63%); background-size: 400% 100%; animation: shimmer 1.4s ease infinite; border-radius: .5rem; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .spinner { width: 14px; height: 14px; border: 2px solid rgba(255,255,255,.3); border-top-color: #fff; border-radius: 50%; display: inline-block; animation: spin .7s linear infinite; }
+  @keyframes pulseDot { 0%,100% { opacity: 1; } 50% { opacity: .35; } }
+  .pulse-dot { animation: pulseDot 1.6s ease infinite; }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } .btn:hover:not(:disabled) { transform: none !important; } }
+
+  /* Glass surfaces */
+  .card { background: rgba(15,23,42,.6); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); border: 1px solid rgba(16,185,129,.2); border-radius: 1rem; box-shadow: 0 20px 25px -5px rgba(0,0,0,.35), 0 8px 10px -6px rgba(0,0,0,.3), 0 10px 15px -3px rgba(16,185,129,.06); }
+  .lbl { display: block; font-size: .78rem; font-weight: 600; color: #D1D5DB; margin-bottom: .35rem; }
+  .hint { font-size: .75rem; color: #9CA3AF; }
+  .paper { background: #fff; color: #0F172A; }
+  .paper-err { background: #FEF2F2; border: 1px solid #FECACA; color: #B91C1C; }
+
+  /* Form fields + validation */
+  .field { width: 100%; border: 1px solid rgba(148,163,184,.28); border-radius: .6rem; padding: .55rem .75rem; font-size: .875rem; background: rgba(2,6,23,.55); color: #F3F4F6; transition: all .2s; font-family: inherit; }
+  .field.auto { width: auto; }
+  .field.sm { padding: .3rem .5rem; font-size: .8rem; }
+  .field:focus { outline: none; border-color: var(--em); box-shadow: 0 0 0 3px rgba(16,185,129,.22); }
+  .field.invalid { border-color: #EF4444; box-shadow: 0 0 0 3px rgba(239,68,68,.32), 0 0 14px rgba(239,68,68,.25); }
+  .field::placeholder { color: #6B7280; }
+  select.field, .status-select { -webkit-appearance: none; appearance: none; background-repeat: no-repeat; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='%239CA3AF' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 8l5 5 5-5'/%3E%3C/svg%3E"); }
+  select.field { background-position: right 1rem center; background-size: 14px; padding-right: 2.75rem; cursor: pointer; }
+  .status-select { background-position: right .6rem center; background-size: 11px; padding-right: 1.8rem; }
+  .field.compact { padding-top: .38rem; padding-bottom: .38rem; }
+  .field option, .status-select option { background: #0F172A; color: #F3F4F6; }
+  input[type=date]::-webkit-calendar-picker-indicator { filter: invert(.85); cursor: pointer; }
+  textarea.field { resize: vertical; line-height: 1.5; }
+  .field-wrap { position: relative; }
+  .tip { position: absolute; right: 8px; top: 100%; margin-top: 6px; background: #EF4444; color: #fff; font-size: .72rem; font-weight: 500; padding: .28rem .55rem; border-radius: .4rem; z-index: 30; box-shadow: 0 6px 14px rgba(239,68,68,.35); animation: fadeIn .15s ease both; pointer-events: none; }
+  .tip::before { content: ''; position: absolute; top: -4px; right: 14px; border: 4px solid transparent; border-top: 0; border-bottom-color: #EF4444; }
+
+  /* Buttons: translucent emerald fills, hover scale */
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: .4rem; font-weight: 600; font-size: .8125rem; padding: .55rem .95rem; border-radius: .65rem; border: 1px solid transparent; cursor: pointer; white-space: nowrap; transition: all .3s; font-family: inherit; }
+  .btn:hover:not(:disabled) { transform: scale(1.05); }
+  .btn:disabled { opacity: .55; cursor: not-allowed; }
+  .btn-sm { padding: .32rem .6rem; font-size: .75rem; }
+  .btn-primary { background: rgba(16,185,129,.2); color: #A7F3D0; border-color: rgba(16,185,129,.45); }
+  .btn-primary:hover:not(:disabled) { background: #10B981; color: #fff; box-shadow: 0 0 20px rgba(16,185,129,.45); }
+  .btn-dark { background: rgba(30,41,59,.75); color: #E5E7EB; border-color: rgba(255,255,255,.12); }
+  .btn-dark:hover:not(:disabled) { background: #10B981; color: #fff; border-color: #10B981; }
+  .btn-secondary { background: rgba(255,255,255,.05); color: #E5E7EB; border-color: rgba(255,255,255,.14); }
+  .btn-secondary:hover:not(:disabled) { background: rgba(16,185,129,.2); border-color: rgba(16,185,129,.5); color: #fff; }
+  .btn-danger { background: rgba(239,68,68,.1); color: #FCA5A5; border-color: rgba(239,68,68,.35); }
+  .btn-danger:hover:not(:disabled) { background: rgba(239,68,68,.3); color: #fff; }
+  .btn-solid-danger { background: rgba(239,68,68,.85); color: #fff; border-color: rgba(252,165,165,.4); box-shadow: 0 0 16px rgba(239,68,68,.25); }
+  .btn-solid-danger:hover:not(:disabled) { background: #EF4444; }
+  .btn-success { background: #10B981; color: #022C22; }
+  .btn-success:hover:not(:disabled) { background: #34D399; box-shadow: 0 0 18px rgba(16,185,129,.5); }
+
+  /* Sidebar navigation: rounded icon tiles, glowing active state */
+  .nav-item { display: flex; align-items: center; gap: .75rem; width: 100%; padding: .35rem .5rem; border-radius: .95rem; font-size: .875rem; font-weight: 500; color: #9CA3AF; text-align: left; border: 1px solid transparent; transition: all .3s; }
+  .nav-icon { width: 2.25rem; height: 2.25rem; border-radius: .8rem; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.08); font-size: 1rem; flex-shrink: 0; transition: all .3s; }
+  .nav-profile { margin-top: .85rem; border-color: rgba(16,185,129,.2); background: rgba(16,185,129,.06); }
+  .nav-profile:not(.active) .nav-icon { border-color: rgba(16,185,129,.35); background: rgba(16,185,129,.12); }
+  .nav-item:hover { background: rgba(255,255,255,.05); color: #F3F4F6; }
+  .nav-item:hover .nav-icon { border-color: rgba(16,185,129,.4); }
+  .nav-item.active, .nav-item.active:hover { background: rgba(16,185,129,.1); color: #ECFDF5; border-color: rgba(16,185,129,.25); }
+  .nav-item.active .nav-icon { background: #10B981; border-color: #34D399; box-shadow: 0 0 18px rgba(16,185,129,.75), 0 0 5px rgba(52,211,153,.9); }
+
+  /* Badges & status */
+  .badge { display: inline-flex; align-items: center; gap: .3rem; padding: .15rem .55rem; border-radius: 999px; font-size: .72rem; font-weight: 600; }
+  .status-select { border-radius: 999px; border: 1px solid; padding: .25rem 1.6rem .25rem .65rem; font-size: .75rem; font-weight: 600; cursor: pointer; font-family: inherit; }
+  .st-ok { background-color: rgba(16,185,129,.15); color: #6EE7B7; border-color: rgba(16,185,129,.4); }
+  .st-prog { background-color: rgba(249,115,22,.15); color: #FDBA74; border-color: rgba(249,115,22,.4); }
+  .st-none { background-color: rgba(148,163,184,.12); color: #CBD5E1; border-color: rgba(148,163,184,.3); }
+
+  /* Tables */
+  .tbl { width: 100%; border-collapse: collapse; font-size: .85rem; }
+  .tbl th { text-align: left; font-size: .72rem; font-weight: 600; letter-spacing: .04em; color: #9CA3AF; padding: .5rem .75rem; background: rgba(255,255,255,.04); border-bottom: 1px solid rgba(255,255,255,.08); white-space: nowrap; }
+  .tbl td { padding: .5rem .75rem; border-bottom: 1px solid rgba(255,255,255,.07); vertical-align: top; }
+  .tbl tbody tr:last-child td { border-bottom: 0; }
+  .tbl tbody tr:not(.row-h):hover td { background: rgba(30,41,59,.5); }
+  .tbl tbody tr.row-h { transition: background-color .2s; }
+  .tbl th.sortable { cursor: pointer; user-select: none; }
+  .tbl th.sortable:hover { color: var(--em-l); }
+
+  /* Toasts & modal: dark glass with emerald glow */
+  .toast { display: flex; align-items: center; gap: .6rem; padding: .7rem 1rem; border-radius: .8rem; background: rgba(15,23,42,.85); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); color: #F3F4F6; font-size: .85rem; border: 1px solid rgba(16,185,129,.35); border-left: 4px solid var(--em); box-shadow: 0 10px 30px rgba(0,0,0,.5), 0 0 22px rgba(16,185,129,.14); animation: slideUp .3s ease both; max-width: 360px; transition: all .3s; }
+  .toast.error { border-color: rgba(239,68,68,.4); border-left-color: #EF4444; box-shadow: 0 10px 30px rgba(0,0,0,.5), 0 0 22px rgba(239,68,68,.15); }
+  .toast.info { border-left-color: var(--or); }
+  .toast.out { opacity: 0; transform: translateY(10px); }
+  .modal-backdrop.hidden { display: none; }
+  .modal-backdrop { position: fixed; inset: 0; background: rgba(2,6,23,.72); display: flex; align-items: center; justify-content: center; padding: 1rem; z-index: 80; -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); }
+  .modal-card { background: rgba(15,23,42,.82); -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px); color: #F3F4F6; border: 1px solid rgba(16,185,129,.32); border-radius: 1.1rem; width: 100%; max-height: 92vh; overflow: auto; box-shadow: 0 25px 50px rgba(0,0,0,.6), 0 0 44px rgba(16,185,129,.13); }
+
+  /* Markdown output */
+  .md { font-size: .9rem; line-height: 1.65; color: #E5E7EB; }
+  .md h1, .md h2, .md h3, .md h4 { font-weight: 700; color: #F9FAFB; margin: 1.4rem 0 .6rem; line-height: 1.3; }
+  .md h1 { font-size: 1.35rem; } .md h2 { font-size: 1.1rem; padding-bottom: .35rem; border-bottom: 1px solid rgba(16,185,129,.25); } .md h3 { font-size: 1rem; } .md h4 { font-size: .9rem; }
+  .md > :first-child { margin-top: 0; }
+  .md p { margin: .55rem 0; }
+  .md ul, .md ol { margin: .5rem 0 .5rem 1.3rem; } .md ul { list-style: disc; } .md ol { list-style: decimal; } .md li { margin: .25rem 0; }
+  .md li::marker { color: #34D399; }
+  .md code { background: rgba(255,255,255,.1); color: #A7F3D0; border-radius: .3rem; padding: .1rem .35rem; font-size: .82em; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  .md pre.code { background: rgba(2,6,23,.75); color: #E2E8F0; border: 1px solid rgba(255,255,255,.08); border-radius: .8rem; padding: 1rem 1.1rem; overflow-x: auto; margin: .8rem 0; font-size: .8rem; line-height: 1.6; }
+  .md pre.code code { background: transparent; padding: 0; color: inherit; font-size: inherit; }
+  .md blockquote { border-left: 3px solid var(--em); background: rgba(16,185,129,.1); padding: .5rem .9rem; border-radius: 0 .5rem .5rem 0; margin: .7rem 0; color: #A7F3D0; }
+  .md table { border-collapse: collapse; margin: .8rem 0; font-size: .85rem; width: 100%; } .md th, .md td { border: 1px solid rgba(255,255,255,.12); padding: .4rem .6rem; text-align: left; } .md th { background: rgba(255,255,255,.06); }
+  .md hr { border: 0; border-top: 1px solid rgba(255,255,255,.1); margin: 1rem 0; }
+  .gk { color: #34D399; font-weight: 600; } .gk2 { color: #FDBA74; font-weight: 600; }
+
+  .phase-row td { background: rgba(16,185,129,.08); border-bottom: 1px solid rgba(16,185,129,.22); padding-top: .6rem; padding-bottom: .6rem; }
+  .tbl tbody tr.phase-row:hover td { background: rgba(16,185,129,.08); }
+  .top-link { display: inline-flex; align-items: center; gap: .4rem; padding: .4rem .85rem; border-radius: 999px; font-size: .8125rem; font-weight: 600; color: #D1D5DB; border: 1px solid rgba(255,255,255,.12); background: rgba(255,255,255,.04); transition: all .3s; cursor: pointer; font-family: inherit; }
+  .top-link:hover { color: #fff; border-color: rgba(16,185,129,.55); background: rgba(16,185,129,.16); box-shadow: 0 0 16px rgba(16,185,129,.22); }
+  .top-link.active { color: #A7F3D0; background: rgba(16,185,129,.2); border-color: rgba(16,185,129,.55); }
+  .btn-lg { padding: .75rem 1.4rem; font-size: .9rem; border-radius: .8rem; }
+  .btn-cta { box-shadow: 0 0 22px rgba(16,185,129,.28); }
+  .photo-frame { width: 9.5rem; height: 9.5rem; border-radius: 1.4rem; overflow: hidden; flex-shrink: 0; border: 1px solid rgba(16,185,129,.4); background: rgba(15,23,42,.6); box-shadow: 0 0 34px rgba(16,185,129,.18), 0 18px 30px -10px rgba(0,0,0,.5); padding: .35rem; }
+  .photo-frame img, .photo-fallback { width: 100%; height: 100%; object-fit: cover; border-radius: 1.05rem; display: block; }
+  .photo-fallback { display: flex; align-items: center; justify-content: center; font-size: 2.6rem; font-weight: 700; letter-spacing: .05em; color: #A7F3D0; background: linear-gradient(135deg, rgba(16,185,129,.25), rgba(15,23,42,.8)); }
+  .contact-row { display: flex; align-items: center; gap: .75rem; padding: .5rem .8rem; border-radius: .85rem; border: 1px solid rgba(255,255,255,.08); background: rgba(255,255,255,.03); transition: all .3s; color: #E5E7EB; text-decoration: none; }
+  .contact-row:hover { border-color: rgba(16,185,129,.5); background: rgba(16,185,129,.1); transform: translateX(3px); }
+  .contact-ico { width: 2.1rem; height: 2.1rem; border-radius: .7rem; display: flex; align-items: center; justify-content: center; background: rgba(16,185,129,.15); border: 1px solid rgba(16,185,129,.3); flex-shrink: 0; }
+  .lift { transition: transform .3s, border-color .3s, box-shadow .3s; }
+  .lift:hover { transform: translateY(-3px); border-color: rgba(16,185,129,.5); box-shadow: 0 20px 30px -8px rgba(0,0,0,.45), 0 0 28px rgba(16,185,129,.14); }
+  .stat-chip { display: inline-flex; flex-direction: column; padding: .45rem .75rem; border-radius: .75rem; background: rgba(249,115,22,.1); border: 1px solid rgba(249,115,22,.3); }
+  .chk { display: inline-flex; align-items: center; gap: .3rem; font-size: .78rem; font-weight: 600; cursor: pointer; }
+  .chk input { width: 1rem; height: 1rem; cursor: pointer; }
+  .chk.pass input { accent-color: #10B981; } .chk.fail input { accent-color: #EF4444; }
+  input[type=range], input[type=checkbox] { accent-color: #10B981; }
+  details > summary { cursor: pointer; list-style: none; } details > summary::-webkit-details-marker { display: none; }
+  details[open] .chev { transform: rotate(90deg); } .chev { transition: transform .2s; display: inline-block; }
+  ::-webkit-scrollbar { height: 8px; width: 8px; } ::-webkit-scrollbar-thumb { background: rgba(148,163,184,.3); border-radius: 8px; } ::-webkit-scrollbar-thumb:hover { background: rgba(16,185,129,.5); }
+</style>
+</head>
+<body class="font-sans bg-gradient-to-br from-gray-950 via-slate-900 to-emerald-950 text-gray-100 min-h-screen bg-fixed">
+<div id="app" class="flex min-h-screen">
+  <div id="overlay" data-action="close-sidebar" class="fixed inset-0 bg-black/40 z-30 hidden"></div>
+
+  <aside id="sidebar" class="fixed inset-y-0 left-0 w-64 bg-slate-950/70 backdrop-blur-xl border-r border-emerald-500/10 text-gray-200 z-40 flex flex-col -translate-x-full lg:translate-x-0 transition-transform duration-200">
+    <div class="px-5 py-5 flex items-center gap-3 border-b border-white/10">
+      <div class="w-10 h-10 rounded-xl bg-emerald-500 shadow-lg shadow-emerald-500/40 flex items-center justify-center shrink-0">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M5 19v-6M10 19V7M15 19v-9M20 19V4"/></svg>
+      </div>
+      <div class="leading-tight">
+        <div class="text-white font-semibold">BA Command Center</div>
+        <div class="text-xs text-gray-400">Business Analyst</div>
+      </div>
+    </div>
+    <nav id="nav" class="flex-1 overflow-y-auto px-3 pb-4" aria-label="Main"></nav>
+    <div class="px-5 py-4 border-t border-white/10 text-xs text-gray-400 leading-relaxed">
+      Your edits are saved in this browser only. Use <span class="text-gray-200 font-medium">AI Settings</span> to back up or move your workspace.
+    </div>
+  </aside>
+
+  <div class="flex-1 lg:ml-64 min-w-0 flex flex-col">
+    <header class="sticky top-0 z-20 mb-3 bg-slate-950/60 backdrop-blur-xl border-b border-white/10">
+      <div class="flex items-center gap-3 px-4 md:px-8 py-2">
+        <button data-action="toggle-sidebar" class="lg:hidden p-2 -ml-2 rounded-lg hover:bg-white/10 transition-all duration-200" aria-label="Open menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D1D5DB" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+        <div class="min-w-0">
+          <h1 id="page-title" class="text-base md:text-lg font-semibold text-gray-100 truncate"></h1>
+          <p id="page-sub" class="text-xs text-gray-400 truncate hidden sm:block"></p>
+        </div>
+        <div class="ml-auto flex items-center gap-2 md:gap-3">
+          <button id="profile-link" data-action="go" data-route="profile" class="top-link"><span aria-hidden="true">👤</span><span class="hidden md:inline">About Me / Profile</span><span class="md:hidden">Profile</span></button>
+          <button id="mode-badge" data-action="go" data-route="settings" class="badge border transition-all duration-200" title="Open AI settings"></button>
+          <button data-action="reset" class="btn btn-solid-danger shadow-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>
+            <span class="hidden sm:inline">Reset to Master Portfolio</span><span class="sm:hidden">Reset</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="px-4 md:px-8 pt-0 pb-8 flex-1 max-w-[1400px] w-full mx-auto">
+      <section id="view-sprint" class="view"></section>
+      <section id="view-portfolio" class="view"></section>
+      <section id="view-stories" class="view"></section>
+      <section id="view-diagrams" class="view"></section>
+      <section id="view-uat" class="view"></section>
+      <section id="view-wireframes" class="view"></section>
+      <section id="view-profile" class="view"></section>
+      <section id="view-settings" class="view"></section>
+    </main>
+  </div>
+</div>
+
+<div id="toasts" class="fixed bottom-4 right-4 z-[100] flex flex-col gap-2 items-end" aria-live="polite"></div>
+<div id="modal-root"></div>
+<input type="file" id="import-file" accept=".json,application/json" class="hidden" data-change="import-file">
+
+<script>
+(function () {
+'use strict';
+
+/* =====================================================================
+   UTILITIES
+   ===================================================================== */
+const $ = (s, r) => (r || document).querySelector(s);
+const $$ = (s, r) => Array.from((r || document).querySelectorAll(s));
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const uid = p => (p || 'id') + '_' + Math.random().toString(36).slice(2, 9) + Date.now().toString(36).slice(-3);
+const clamp = (n, a, b) => Math.min(b, Math.max(a, n));
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+const truncate = (s, n) => { s = String(s || ''); return s.length > n ? s.slice(0, n - 1).trimEnd() + '…' : s; };
+const lowerFirst = s => (s ? s.charAt(0).toLowerCase() + s.slice(1) : s);
+const cleanLine = s => String(s || '').split('\n')[0].replace(/\s+/g, ' ').trim().replace(/[.!?]+$/, '');
+const pad2 = n => String(n).padStart(2, '0');
+const todayISO = () => { const d = new Date(); return d.getFullYear() + '-' + pad2(d.getMonth() + 1) + '-' + pad2(d.getDate()); };
+const toDate = iso => new Date(iso + 'T00:00:00');
+const daysBetween = (a, b) => Math.round((toDate(b) - toDate(a)) / 864e5);
+const fmtDate = iso => (iso ? toDate(iso).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : '—');
+const fmtShort = iso => (iso ? toDate(iso).toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) : '—');
+const optionsHtml = (list, selected) => list.map(o => {
+  const v = typeof o === 'object' ? o.value : o, l = typeof o === 'object' ? o.label : o;
+  return '<option value="' + esc(v) + '"' + (String(v) === String(selected) ? ' selected' : '') + '>' + esc(l) + '</option>';
+}).join('');
+
+function download(filename, content, mime) {
+  const blob = content instanceof Blob ? content : new Blob([content], { type: mime || 'text/plain' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = filename;
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1500);
+}
+
+async function copyText(text, msg) {
+  try { await navigator.clipboard.writeText(text); }
+  catch (e) {
+    const ta = document.createElement('textarea');
+    ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+    document.body.appendChild(ta); ta.select();
+    try { document.execCommand('copy'); } catch (err) { /* clipboard unavailable */ }
+    ta.remove();
+  }
+  toast(msg || '📋 Copied to clipboard');
+}
+
+function toast(msg, type) {
+  const box = $('#toasts');
+  const t = document.createElement('div');
+  t.className = 'toast' + (type ? ' ' + type : '');
+  t.setAttribute('role', 'status');
+  t.textContent = msg;
+  box.appendChild(t);
+  setTimeout(() => { t.classList.add('out'); setTimeout(() => t.remove(), 350); }, 3200);
+}
+
+/* ---------- Validation (glowing red border + tooltip) ---------- */
+function clearInvalid(el) {
+  el.classList.remove('invalid');
+  const t = el.parentElement && el.parentElement.querySelector(':scope > .tip');
+  if (t) t.remove();
+}
+function setInvalid(el, msg) {
+  clearInvalid(el);
+  el.classList.add('invalid');
+  const tip = document.createElement('div');
+  tip.className = 'tip'; tip.textContent = '⚠ ' + msg;
+  el.parentElement.appendChild(tip);
+}
+function requireField(el, msg) {
+  if (!el.value.trim()) { setInvalid(el, msg || 'This field is required'); el.focus(); return false; }
+  clearInvalid(el); return true;
+}
+
+function setBusy(btn, on) {
+  if (!btn) return;
+  if (on) { btn.dataset.html = btn.innerHTML; btn.disabled = true; btn.innerHTML = '<span class="spinner"></span> Generating…'; }
+  else { btn.disabled = false; if (btn.dataset.html) btn.innerHTML = btn.dataset.html; }
+}
+
+/* =====================================================================
+   DEFAULT DATA & STATE (localStorage persistence)
+   ===================================================================== */
+const KEY = 'ba-portfolio-workspace-v1';
+const DEFAULT_OVERRIDES = {
+  stories: "Ensure user stories follow INVEST principles (Independent, Negotiable, Valuable, Estimable, Small, Testable) in standard 'As a [role], I want [feature], So that [benefit]' format. For Acceptance Criteria, evaluate the context: use Given-When-Then (Gherkin) format if behavioral flow verification is needed, OR use a clean Checklist format if simple rule validation/constraints fit better.",
+  diagrams: "Generate clean Mermaid.js diagram code. Supported options: Standard Flowchart, Cross-Functional Swimlane, or BPMN 2.0. For Swimlanes, ALWAYS create explicit, separated role columns (e.g., Customer/User, Business Analyst, System/IT, Approver) to clearly delineate task ownership across columns.",
+  uat: "Enforce strict UAT rules: 1) Write strictly in Business Language avoiding technical/database jargon. 2) Focus on real-world Business Value workflows rather than coding bugs. 3) Enforce Strict Traceability linking back to User Story/BRS IDs. 4) Define Clean Preconditions for system starting state. 5) Include both Positive (happy path) and Negative (user error/boundary) paths.",
+  wireframes: "Generate a clear wireframe layout mockup based directly on the provided User Story and Acceptance Criteria. Support both Mobile App and Desktop Website view layouts with clean visual UI blocks and section hierarchy."
+};
+const DEFAULT_PERSONA = 'You are a Business Analyst delivering fintech, insurance, and enterprise mobile and web products in Agile teams. You write precise, testable, INVEST-compliant requirements in clear business language, and you always consider edge cases, compliance, and traceability.';
+const PJLI = 'PJ Lhuillier Group of Companies (PJLI)';
+const CLIB = 'PJ Lhuillier Group of Companies (CLIB)';
+const TM = 'Tech Mahindra OCSI (TPG Client)';
+const MASTER_PROJECTS = [
+  [PJLI, 'Database Optimization Initiative', 'Database', 'Done', 2023],
+  [PJLI, 'Bills Payment Failure Rate Monitoring System', 'Automated Reports', 'Done', 2024],
+  [PJLI, 'AI-generated System Tutorials', 'Web Application', 'Done', 2024],
+  [CLIB, 'Insurely Mobile Application Google Playstore Publishing', 'Mobile Application', 'Done', 2025],
+  [CLIB, 'Insurely Mobile Application Apple Appstore Publishing', 'Mobile Application', 'Done', 2025],
+  [CLIB, 'Profile Management Module', 'Mobile Application', 'Done', 2025],
+  [CLIB, 'Data Driven Configuration of Company Information and Contract Agreement', 'Mobile Application', 'Done', 2025],
+  [CLIB, 'Application Stabilization and Optimization', 'Mobile Application', 'Done', 2025],
+  [CLIB, 'Business Insurance Product Integration', 'Mobile Application', 'Done', 2025],
+  [CLIB, 'Comprehensive Vehicle Insurance Product Integration', 'Mobile Application', 'Done', 2025],
+  [CLIB, 'Health and Personal Accident Insurance Product Integration', 'Mobile Application', 'Done', 2025],
+  [CLIB, 'Quotation Generator for Vehicle Insurance Integration', 'Mobile Application', 'Done', 2025],
+  [CLIB, 'Application Production Issues Fixes', 'Mobile Application', 'Done', 2025],
+  [CLIB, 'Change of Framework to Flutter', 'Mobile Application', 'Done', 2025],
+  [CLIB, 'Cross-Platform Insurance Marketplace Integration', 'Web Application', 'Done', 2025],
+  [TM, 'Mobile Plan Price Increase', 'Web Application', 'Done', 2026],
+  [TM, 'POS System Upgrade', 'Operating System', 'Done', 2026]
+];
+
+function getDefaults() {
+  const dl = [
+    ['Business Requirements Specification (BRS)', 'Requirements', 'ph_disc', '2026-09-01', '2026-09-09', 'Completed'],
+    ['Project Charter & Scope Definition', 'Planning', 'ph_disc', '2026-09-02', '2026-09-11', 'Completed'],
+    ['Stakeholder Workshop Notes & RACI', 'Planning', 'ph_disc', '2026-09-04', '2026-09-14', 'Completed'],
+    ['Product Backlog & User Stories', 'Agile Artifacts', 'ph_s1', '2026-09-15', '2026-09-22', 'Completed'],
+    ['Functional Requirements Specification', 'Requirements', 'ph_s1', '2026-09-16', '2026-09-26', 'Completed'],
+    ['Wireframes & UI Flow Pack', 'Design', 'ph_s1', '2026-09-18', '2026-09-28', 'Completed'],
+    ['Data Dictionary & API Mapping', 'Technical Docs', 'ph_s1', '2026-09-21', '2026-09-28', 'Completed'],
+    ['UAT Test Plan & Test Cases', 'Testing', 'ph_s2', '2026-09-29', '2026-10-08', 'In Progress'],
+    ['JIRA Defect Log & Triage Report', 'Quality', 'ph_s2', '2026-10-01', '2026-10-12', 'In Progress'],
+    ['Requirements Traceability Matrix', 'Quality', 'ph_s2', '2026-10-05', '2026-10-12', 'Not Started'],
+    ['Deployment & Go-Live Checklist', 'Release', 'ph_rel', '2026-10-13', '2026-10-20', 'Not Started'],
+    ['Store Publishing Guide (App Store / Google Play)', 'Release', 'ph_rel', '2026-10-15', '2026-10-22', 'Not Started'],
+    ['Post-Launch Monitoring Report', 'Release', 'ph_rel', '2026-10-23', '2026-10-30', 'Not Started']
+  ];
+  return {
+    version: 3,
+    settings: {
+      apiKey: '', model: 'gemini-1.5-flash', temperature: 0.2, persona: DEFAULT_PERSONA,
+      overrides: Object.assign({}, DEFAULT_OVERRIDES)
+    },
+    phases: [
+      { id: 'ph_disc', name: 'Discovery (Requirements Gathering)', start: '2026-09-01', end: '2026-09-14', progress: 100, desc: 'Initial stakeholder workshops, BRS writing, project charters, and scope definition (e.g., TPG price increase scope, partner onboarding specs).' },
+      { id: 'ph_s1', name: 'Sprint 1: Development Phase', start: '2026-09-15', end: '2026-09-28', progress: 100, desc: 'Core implementation, database optimization, and framework migration (e.g., Flutter transition for CLIB).' },
+      { id: 'ph_s2', name: 'Sprint 2: Testing Phase', start: '2026-09-29', end: '2026-10-12', progress: 70, desc: 'User Acceptance Testing (UAT across 40+ sprints), JIRA bug logging, and quality stabilization.' },
+      { id: 'ph_rel', name: 'Release Phase', start: '2026-10-13', end: '2026-10-30', progress: 0, desc: 'Production deployment, App Store / Google Play publishing (Insurely app), and post-launch monitoring.' }
+    ],
+    deliverables: dl.map((d, i) => ({ id: 'dl_' + (i + 1), name: d[0], category: d[1], phaseId: d[2], start: d[3], end: d[4], status: d[5] })),
+    projects: MASTER_PROJECTS.map((p, i) => ({ id: 'pj_' + (i + 1), client: p[0], name: p[1], platform: p[2], status: p[3], year: p[4] })),
+    inputs: { sFeature: '', sPersona: '', sContext: '', dDesc: '', dType: 'standard', uStory: '', uScope: 'full', wName: '', wStory: '', wConstraints: '' },
+    outputs: { story: null, diagram: null, uat: null, wireframe: null }
+  };
+}
+
+function normalize(raw) {
+  const d = getDefaults();
+  const r = raw && typeof raw === 'object' ? raw : {};
+  const s = r.settings && typeof r.settings === 'object' ? r.settings : {};
+  const arr = (v, fb) => (Array.isArray(v) ? v.filter(x => x && typeof x === 'object').map(x => Object.assign({}, x, { id: x.id || uid('x') })) : fb);
+  const t = s.temperature === undefined || s.temperature === null || s.temperature === '' ? NaN : Number(s.temperature);
+  let phases = arr(r.phases, d.phases), deliverables = arr(r.deliverables, d.deliverables);
+  if (!(Number(r.version) >= 2) && (Array.isArray(r.phases) || Array.isArray(r.deliverables))) {
+    // Workspaces saved before the 4-phase lifecycle: adopt the new phases, keep user-added deliverables nested under them.
+    const custom = (Array.isArray(r.deliverables) ? arr(r.deliverables, []) : []).filter(x => !/^dl_\d{1,2}$/.test(x.id))
+      .map(x => Object.assign({}, x, { phaseId: x.phaseId === 'ph_uat' ? 'ph_rel' : (d.phases.some(p => p.id === x.phaseId) ? x.phaseId : '') }));
+    phases = d.phases; deliverables = d.deliverables.concat(custom);
+  }
+  const ov = Object.assign({}, d.settings.overrides, s.overrides && typeof s.overrides === 'object' ? s.overrides : {});
+  if (!(Number(r.version) >= 3)) Object.keys(DEFAULT_OVERRIDES).forEach(k => { if (!String(ov[k] || '').trim()) ov[k] = DEFAULT_OVERRIDES[k]; });
+  return {
+    version: 3,
+    settings: {
+      apiKey: typeof s.apiKey === 'string' ? s.apiKey : '',
+      model: typeof s.model === 'string' && s.model.trim() ? s.model.trim() : d.settings.model,
+      temperature: isNaN(t) ? d.settings.temperature : clamp(t, 0, 1),
+      persona: typeof s.persona === 'string' && s.persona.trim() ? s.persona : d.settings.persona,
+      overrides: ov
+    },
+    phases: phases,
+    deliverables: deliverables,
+    projects: arr(r.projects, d.projects),
+    inputs: Object.assign({}, d.inputs, r.inputs && typeof r.inputs === 'object' ? r.inputs : {}),
+    outputs: Object.assign({}, d.outputs, r.outputs && typeof r.outputs === 'object' ? r.outputs : {})
+  };
+}
+
+let storageWarned = false;
+function loadState() {
+  try { const raw = localStorage.getItem(KEY); if (raw) return normalize(JSON.parse(raw)); } catch (e) { /* fall through to defaults */ }
+  return getDefaults();
+}
+function save() {
+  try { localStorage.setItem(KEY, JSON.stringify(state)); }
+  catch (e) {
+    if (!storageWarned) { storageWarned = true; toast('⚠️ Browser storage is unavailable. Changes will last only for this session.', 'error'); }
+  }
+}
+
+let state = loadState();
+const ui = { dStatus: 'All', dPhase: 'All', pCompany: 'All', pPlatform: 'All', pYear: 'All', pEdit: null, pSort: { key: '', dir: 'asc' }, settingsTab: 'stories' };
+let current = 'profile';
+const isLive = () => !!state.settings.apiKey.trim();
+
+/* =====================================================================
+   NAVIGATION, MODALS, SHELL
+   ===================================================================== */
+const ROUTES = [
+  { id: 'profile', group: '', icon: '👤', label: 'About Me / Profile', title: 'About Me / Profile', sub: 'Izach Vista · Business Analyst' },
+  { id: 'portfolio', group: 'Dashboards', icon: '📊', label: 'Career Portfolio', title: 'Career Project & Enhancement Portfolio', sub: 'Dashboard 1: filter and analyze delivered projects' },
+  { id: 'sprint', group: 'Dashboards', icon: '📅', label: 'Sprint Tracker', title: 'Sprint Tracker · Project Command Center', sub: 'Dashboard 2: track the 4-phase delivery lifecycle and BA deliverables' },
+  { id: 'stories', group: 'AI Workbench', icon: '📝', label: 'User Stories', title: 'User Story & Gherkin AC Generator', sub: 'Turn a feature idea into a sprint-ready story' },
+  { id: 'diagrams', group: 'AI Workbench', icon: '🔀', label: 'Diagram Creator', title: 'Multi-Format AI Diagram Creator', sub: 'Flowcharts, swimlanes and BPMN-style diagrams' },
+  { id: 'uat', group: 'AI Workbench', icon: '✅', label: 'UAT Test Cases', title: 'AI UAT Test Case Creator', sub: 'Generate and execute a test matrix' },
+  { id: 'wireframes', group: 'AI Workbench', icon: '🖼️', label: 'Wireframer', title: 'AI Multi-Screen Wireframe Generator', sub: 'Primary screen and modal view, side by side' },
+  { id: 'settings', group: 'System', icon: '⚙️', label: 'AI Settings & Backup', title: 'Global AI Control Center & Backup Manager', sub: 'API key, model behavior, and workspace portability' }
+];
+
+function renderNav() {
+  let html = '', g = '';
+  ROUTES.forEach(r => {
+    if (r.group && r.group !== g) { g = r.group; html += '<div class="px-3 pt-5 pb-2 text-xs font-semibold text-gray-400">' + g + '</div>'; }
+    html += '<button data-action="go" data-route="' + r.id + '" class="nav-item transition-all duration-200' + (r.id === 'profile' ? ' nav-profile' : '') + (r.id === current ? ' active' : '') + '"><span class="nav-icon">' + r.icon + '</span><span>' + r.label + '</span></button>';
+  });
+  $('#nav').innerHTML = html;
+}
+
+function renderBadge() {
+  const b = $('#mode-badge');
+  if (isLive()) {
+    b.className = 'badge border transition-all duration-200 bg-emerald-500/10 text-emerald-300 border-emerald-500/30 hover:bg-emerald-500/20';
+    b.innerHTML = '<span class="w-2 h-2 rounded-full bg-[#10B981] pulse-dot"></span> Live AI';
+  } else {
+    b.className = 'badge border transition-all duration-200 bg-amber-500/10 text-amber-300 border-amber-500/30 hover:bg-amber-500/20';
+    b.innerHTML = '<span class="w-2 h-2 rounded-full bg-amber-500"></span> Mock Mode';
+  }
+}
+
+function go(id) {
+  if (location.hash === '#/' + id) navigate(id); else location.hash = '#/' + id;
+}
+function closeSidebar() { $('#sidebar').classList.add('-translate-x-full'); $('#overlay').classList.add('hidden'); }
+function navigate(id) {
+  if (!ROUTES.some(r => r.id === id)) id = 'profile';
+  current = id;
+  const route = ROUTES.find(r => r.id === id);
+  $$('.view').forEach(v => v.classList.remove('active'));
+  const v = $('#view-' + id);
+  void v.offsetWidth;
+  v.classList.add('active');
+  $('#page-title').textContent = route.title;
+  $('#page-sub').textContent = route.sub;
+  document.title = route.label + ' | BA Command Center';
+  renderNav(); closeSidebar();
+  const pl = $('#profile-link'); if (pl) pl.classList.toggle('active', id === 'profile');
+  if (id === 'sprint') renderSprint();
+  if (id === 'portfolio') renderPortfolio();
+  window.scrollTo({ top: 0 });
+}
+
+let modalSubmit = null;
+function openModal(html, wide) {
+  modalSubmit = null;
+  $('#modal-root').innerHTML = '<div class="modal-backdrop fade-in"><div class="modal-card slide-up ' + (wide ? 'max-w-2xl' : 'max-w-lg') + '" role="dialog" aria-modal="true">' + html + '</div></div>';
+  document.body.classList.add('overflow-hidden');
+  const first = $('#modal-root input:not([type=hidden]), #modal-root select, #modal-root textarea');
+  if (first) first.focus();
+}
+function closeModal() {
+  modalSubmit = null;
+  const bd = $('#modal-root .modal-backdrop');
+  if (bd) bd.classList.add('hidden');
+  document.body.classList.remove('overflow-hidden');
+}
+
+function confirmModal(o) {
+  openModal('<div class="p-6"><h3 class="text-lg font-semibold text-gray-100">' + esc(o.title) + '</h3><p class="text-sm text-gray-300 mt-2 leading-relaxed">' + esc(o.message) + '</p>' +
+    '<div class="flex justify-end gap-2 mt-6"><button class="btn btn-secondary" data-action="modal-close">Cancel</button><button id="modal-confirm" class="btn btn-solid-danger">' + esc(o.confirmLabel || 'Confirm') + '</button></div></div>');
+  $('#modal-confirm').addEventListener('click', () => { closeModal(); o.onConfirm(); });
+}
+
+/* Generic validated form modal. fields: [{name,label,type,required,options,list,value,half,min,max,placeholder,requiredMsg}] */
+function formModal(o) {
+  const body = o.fields.map(f => {
+    const id = 'f_' + f.name, v = f.value == null ? '' : f.value;
+    let input;
+    if (f.type === 'select') input = '<select id="' + id + '" class="field">' + optionsHtml(f.options, v) + '</select>';
+    else if (f.type === 'textarea') input = '<textarea id="' + id + '" rows="3" class="field" placeholder="' + esc(f.placeholder || '') + '">' + esc(v) + '</textarea>';
+    else input = '<input id="' + id + '" type="' + (f.type || 'text') + '" value="' + esc(v) + '" class="field" placeholder="' + esc(f.placeholder || '') + '"' +
+      (f.min != null ? ' min="' + f.min + '"' : '') + (f.max != null ? ' max="' + f.max + '"' : '') + (f.list ? ' list="' + id + '_list"' : '') + ' autocomplete="off">' +
+      (f.list ? '<datalist id="' + id + '_list">' + f.list.map(x => '<option value="' + esc(x) + '">').join('') + '</datalist>' : '');
+    return '<div class="' + (f.half ? 'col-span-2 sm:col-span-1' : 'col-span-2') + '"><label for="' + id + '" class="lbl">' + esc(f.label) + (f.required ? ' <span class="text-red-500">*</span>' : '') + '</label><div class="field-wrap">' + input + '</div></div>';
+  }).join('');
+  openModal('<div id="modal-form" role="form"><div class="px-6 pt-6 pb-2"><h3 class="text-lg font-semibold text-gray-100">' + esc(o.title) + '</h3>' + (o.subtitle ? '<p class="text-sm text-gray-400 mt-1">' + esc(o.subtitle) + '</p>' : '') + '</div>' +
+    '<div class="px-6 py-4 grid grid-cols-2 gap-x-4 gap-y-5">' + body + '</div>' +
+    '<div class="px-6 py-4 bg-white/5 border-t border-white/10 flex justify-end gap-2 rounded-b-2xl"><button type="button" class="btn btn-secondary" data-action="modal-close">Cancel</button><button type="button" id="modal-submit" class="btn btn-primary" data-action="modal-submit">' + esc(o.submitLabel || 'Save') + '</button></div></div>');
+  /* Submission is handled by JS, not a native <form> submit, so it also works inside sandboxed iframes (no allow-forms). */
+  modalSubmit = () => {
+    let ok = true; const values = {};
+    o.fields.forEach(f => {
+      const el = $('#f_' + f.name); clearInvalid(el);
+      const val = el.value.trim(); values[f.name] = val;
+      if (f.required && !val) { setInvalid(el, f.requiredMsg || 'This field is required'); ok = false; }
+    });
+    if (ok && o.validate) {
+      const r = o.validate(values);
+      if (r) { setInvalid($('#f_' + r.field), r.msg); ok = false; }
+    }
+    if (ok) {
+      o.fields.forEach(f => {
+        const el = $('#f_' + f.name); if (!el) return;
+        if (el.tagName === 'SELECT') { Array.from(el.options).forEach(op => { op.selected = op.defaultSelected; }); } else el.value = el.defaultValue;
+        clearInvalid(el);
+      });
+      closeModal(); o.onSubmit(values);
+    }
+  };
+}
+
+/* =====================================================================
+   AI ENGINE (Mock demo mode + live Gemini mode)
+   ===================================================================== */
+const FENCE = '```';
+const DIAGRAM_TYPES = {
+  standard: { label: 'Standard Flowchart', rule: 'Draw a standard flowchart using flowchart TD with start and end terminators, process steps, and decision diamonds.' },
+  swimlane: { label: 'Cross-Functional Swimlane', rule: 'Draw a cross-functional swimlane as a Mermaid sequenceDiagram so every role is its own explicit, separated column: start with sequenceDiagram and autonumber, declare one participant per role or department in left-to-right order (e.g. participant C as Customer / User), put every task as a message or self-message (->>) from the role that owns it, show hand-offs as messages between columns, and show decisions with alt / else / end blocks. Do not use flowchart syntax for swimlanes.' },
+  bpmn: { label: 'BPMN 2.0 Style', rule: 'Draw a BPMN 2.0 style diagram using flowchart LR: start event as ((Start)), end event as (((End))), tasks as [[Task]] subroutine shapes, gateways as {Gateway}, one subgraph as the process pool, and classDef styles for events, tasks and gateways.' }
+};
+const UAT_SCOPES = {
+  positive: { label: 'Positive Paths Only', rule: 'Only include happy-path and valid-alternative cases (type Positive).' },
+  negative: { label: 'Negative/Boundary Checks Only', rule: 'Only include negative cases (invalid input, unauthorized access, failures) and boundary-value cases (types Negative and Boundary).' },
+  full: { label: 'Full Matrix', rule: 'Include a balanced mix of Positive, Negative and Boundary cases.' }
+};
+const TASKS = {
+  stories: [
+    'Task: Convert the feature request into an Agile requirement package. Respond in GitHub-flavoured Markdown using exactly these four sections and headings, with no preamble:',
+    '## User Story',
+    '(three lines starting with **As a**, **I want**, **So that**)',
+    '## Acceptance Criteria',
+    '(choose the format that fits the context: a ' + FENCE + 'gherkin code block with a Feature and 5-8 Scenarios using Given/When/Then, including a Scenario Outline with Examples where useful, when behavioural flows need verifying; OR a Markdown checklist of "- [ ] criterion" lines when simple rules or constraints fit better. Follow any feature-specific instructions on which to use.)',
+    '## Edge Cases',
+    '(a bullet list of 5-8 realistic edge cases and failure modes)',
+    '## Business Value',
+    '(a bullet list with measurable outcomes and KPIs)'
+  ].join('\n'),
+  diagrams: 'Task: Produce a valid Mermaid.js diagram for the described process. Respond with ONLY Mermaid code: no markdown fences and no commentary. Rules: never use parentheses, quotes, ampersands, colons or semicolons inside labels or message text (the one colon after each sequence-diagram arrow is required); keep labels under 40 characters. For flowcharts, node ids must be alphanumeric, labels go in square brackets, use {} for decisions and ([ ]) for start/end terminators. ',
+  uat: 'Task: Produce a UAT test matrix for the user story and acceptance criteria. Respond with ONLY a JSON array (no markdown). Each element: {"id":"TC-001","type":"Positive"|"Negative"|"Boundary","ref":"the User Story or BRS ID this case traces to (use IDs found in the input, otherwise US-001)","scenario":"short title in business language","preconditions":"the clean starting state of the system","steps":["step 1","step 2"],"expected":"observable business outcome"}. Produce 6-14 cases with realistic, executable steps. ',
+  wireframes: 'Task: Design a low-fidelity wireframe specification. Respond with ONLY JSON: {"screenName":string,"device":"desktop"|"mobile","primary":{"components":[...]},"modal":{"title":string,"components":[...],"actions":[{"label":string,"variant":"primary"|"secondary"}]}}. Allowed component types and fields: header{label}, tabs{items[]}, search{label}, heading{label}, text{label}, input{label,placeholder}, select{label}, textarea{label}, checkbox{label}, radio{label}, button{label,variant}, buttons{items:[{label,variant}]}, table{columns[],rows[[]]}, cards{items:[{title,value}]}, list{items[]}, image{label}, stepper{items[],active}. Use 6-10 components for the primary screen and 3-5 for the modal. Honour any layout constraints.'
+};
+
+function buildSystemPrompt(feature, task) {
+  const s = state.settings, ov = (s.overrides[feature] || '').trim();
+  return [s.persona, ov ? 'Feature-specific instructions:\n' + ov : '', task].filter(Boolean).join('\n\n');
+}
+
+async function geminiRequest(system, user, json) {
+  const model = (state.settings.model || 'gemini-1.5-flash').trim();
+  const url = 'https://generativelanguage.googleapis.com/v1beta/models/' + encodeURIComponent(model) + ':generateContent?key=' + encodeURIComponent(state.settings.apiKey.trim());
+  const body = {
+    systemInstruction: { parts: [{ text: system }] },
+    contents: [{ role: 'user', parts: [{ text: user }] }],
+    generationConfig: { temperature: Number(state.settings.temperature) }
+  };
+  if (json) body.generationConfig.responseMimeType = 'application/json';
+  const res = await fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+  if (!res.ok) {
+    let msg = res.status + ' ' + res.statusText;
+    try { const j = await res.json(); if (j.error && j.error.message) msg = j.error.message; } catch (e) { /* keep status text */ }
+    throw new Error(msg);
+  }
+  const data = await res.json();
+  const parts = data.candidates && data.candidates[0] && data.candidates[0].content && data.candidates[0].content.parts;
+  const text = parts ? parts.map(p => p.text || '').join('') : '';
+  if (!text) throw new Error('Gemini returned an empty response (it may have been blocked by safety filters).');
+  return text;
+}
+
+/* Returns { text, mode }. Live mode when a key exists; falls back to demo output if the live call fails. */
+async function runAI(o) {
+  if (isLive()) {
+    try { return { text: await geminiRequest(buildSystemPrompt(o.feature, o.task), o.user, !!o.json), mode: 'live' }; }
+    catch (err) {
+      toast('⚠️ Gemini request failed: ' + truncate(err.message, 110) + ' Showing demo output instead.', 'error');
+      await sleep(400);
+      return { text: o.mock(), mode: 'mock' };
+    }
+  }
+  await sleep(1500);
+  return { text: o.mock(), mode: 'mock' };
+}
+
+function parseJSON(text) {
+  const t = String(text).trim().replace(/^```(?:json)?/i, '').replace(/```$/, '').trim();
+  try { return JSON.parse(t); }
+  catch (e) { const m = t.match(/[\[{][\s\S]*[\]}]/); if (m) return JSON.parse(m[0]); throw e; }
+}
+
+const modeChip = mode => mode === 'live'
+  ? '<span class="badge bg-emerald-500/10 text-emerald-300 border border-emerald-500/30">⚡ Live Gemini output</span>'
+  : '<span class="badge bg-amber-500/10 text-amber-300 border border-amber-500/30">🧪 Demo output</span>';
+
+const outputSkeleton = label => '<div class="fade-in"><div class="flex items-center gap-2 text-sm text-gray-400 mb-5"><span class="spinner" style="border-color:rgba(255,255,255,.2);border-top-color:#10B981"></span>' + esc(label) + '</div>' +
+  '<div class="skeleton h-6 w-1/3 mb-4"></div><div class="skeleton h-4 w-full mb-2"></div><div class="skeleton h-4 w-11/12 mb-2"></div><div class="skeleton h-4 w-4/5 mb-6"></div>' +
+  '<div class="skeleton h-5 w-1/4 mb-3"></div><div class="skeleton h-24 w-full mb-6"></div><div class="skeleton h-5 w-1/3 mb-3"></div><div class="skeleton h-4 w-full mb-2"></div><div class="skeleton h-4 w-3/4"></div></div>';
+
+const emptyState = (icon, title, text) => '<div class="flex flex-col items-center justify-center text-center py-16 px-6 fade-in"><div class="w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center text-3xl mb-4">' + icon + '</div><h3 class="font-semibold text-gray-100">' + esc(title) + '</h3><p class="text-sm text-gray-400 mt-1 max-w-sm">' + esc(text) + '</p></div>';
+
+/* =====================================================================
+   MINI MARKDOWN RENDERER
+   ===================================================================== */
+function inlineMd(t) {
+  t = esc(t);
+  t = t.replace(/`([^`]+)`/g, '<code>$1</code>');
+  t = t.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  t = t.replace(/(^|[^*])\*([^*\s][^*]*)\*/g, '$1<em>$2</em>');
+  t = t.replace(/(^|\s)_([^_]+)_(?=\s|$|[.,;:!?])/g, '$1<em>$2</em>');
+  return t;
+}
+function highlightGherkin(code) {
+  return code.split('\n').map(line => esc(line)
+    .replace(/^(\s*)(Feature|Background|Scenario Outline|Scenario|Examples|Rule)(:)/, '$1<span class="gk">$2</span>$3')
+    .replace(/^(\s*)(Given|When|Then|And|But)(\s)/, '$1<span class="gk2">$2</span>$3')).join('\n');
+}
+function renderMarkdown(md) {
+  const lines = String(md || '').replace(/\r\n/g, '\n').split('\n');
+  let html = '', i = 0;
+  const isBlockStart = l => /^(#{1,4}\s|```|>\s?|\s*[-*+]\s+|\s*\d+[.)]\s+|---+\s*$)/.test(l);
+  while (i < lines.length) {
+    const line = lines[i];
+    const fence = line.match(/^```\s*([\w-]*)/);
+    if (fence) {
+      const buf = []; i++;
+      while (i < lines.length && !/^```/.test(lines[i])) { buf.push(lines[i]); i++; }
+      i++;
+      const code = buf.join('\n');
+      html += '<pre class="code"><code>' + (fence[1] === 'gherkin' ? highlightGherkin(code) : esc(code)) + '</code></pre>';
+      continue;
+    }
+    if (/^\s*$/.test(line)) { i++; continue; }
+    const h = line.match(/^(#{1,4})\s+(.*)$/);
+    if (h) { html += '<h' + h[1].length + '>' + inlineMd(h[2]) + '</h' + h[1].length + '>'; i++; continue; }
+    if (/^---+\s*$/.test(line)) { html += '<hr>'; i++; continue; }
+    if (/^>\s?/.test(line)) {
+      const buf = [];
+      while (i < lines.length && /^>\s?/.test(lines[i])) { buf.push(lines[i].replace(/^>\s?/, '')); i++; }
+      html += '<blockquote>' + inlineMd(buf.join(' ')) + '</blockquote>'; continue;
+    }
+    if (line.indexOf('|') >= 0 && i + 1 < lines.length && /^\s*\|?[\s:-]+\|[\s|:-]*$/.test(lines[i + 1])) {
+      const cells = l => l.trim().replace(/^\|/, '').replace(/\|$/, '').split('|').map(c => c.trim());
+      const head = cells(line); i += 2;
+      let rows = '';
+      while (i < lines.length && lines[i].indexOf('|') >= 0 && lines[i].trim()) { rows += '<tr>' + cells(lines[i]).map(c => '<td>' + inlineMd(c) + '</td>').join('') + '</tr>'; i++; }
+      html += '<table><thead><tr>' + head.map(c => '<th>' + inlineMd(c) + '</th>').join('') + '</tr></thead><tbody>' + rows + '</tbody></table>'; continue;
+    }
+    if (/^\s*[-*+]\s+/.test(line)) {
+      let items = '';
+      while (i < lines.length && /^\s*[-*+]\s+/.test(lines[i])) {
+        const t = lines[i].replace(/^\s*[-*+]\s+/, ''), cb = t.match(/^\[( |x|X)\]\s+/);
+        items += cb ? '<li class="list-none -ml-5">' + (cb[1] === ' ' ? '☐ ' : '☑ ') + inlineMd(t.slice(cb[0].length)) + '</li>' : '<li>' + inlineMd(t) + '</li>';
+        i++;
+      }
+      html += '<ul>' + items + '</ul>'; continue;
+    }
+    if (/^\s*\d+[.)]\s+/.test(line)) {
+      let items = '';
+      while (i < lines.length && /^\s*\d+[.)]\s+/.test(lines[i])) { items += '<li>' + inlineMd(lines[i].replace(/^\s*\d+[.)]\s+/, '')) + '</li>'; i++; }
+      html += '<ol>' + items + '</ol>'; continue;
+    }
+    const buf = [];
+    while (i < lines.length && lines[i].trim() && !isBlockStart(lines[i])) { buf.push(lines[i]); i++; }
+    if (!buf.length) { buf.push(lines[i]); i++; }
+    html += '<p>' + inlineMd(buf.join(' ')) + '</p>';
+  }
+  return html;
+}
+
+/* ---------- SVG to PNG export helper (used by diagrams and wireframes) ---------- */
+function svgToPng(svgString, w, h, filename) {
+  return new Promise((resolve, reject) => {
+    const scale = 2, img = new Image();
+    img.onload = () => {
+      try {
+        const c = document.createElement('canvas');
+        c.width = Math.round(w * scale); c.height = Math.round(h * scale);
+        const ctx = c.getContext('2d');
+        ctx.fillStyle = '#FFFFFF'; ctx.fillRect(0, 0, c.width, c.height);
+        ctx.drawImage(img, 0, 0, c.width, c.height);
+        c.toBlob(b => { if (!b) { reject(new Error('Canvas export failed')); return; } download(filename, b); resolve(); }, 'image/png');
+      } catch (err) { reject(err); }
+    };
+    img.onerror = () => reject(new Error('The browser could not render the image'));
+    img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svgString);
+  });
+}
+
+/* =====================================================================
+   EVENT REGISTRIES (populated by each module below)
+   ===================================================================== */
+const actions = {};
+const changes = {};
+
+actions['go'] = el => go(el.dataset.route);
+actions['toggle-sidebar'] = () => { $('#sidebar').classList.remove('-translate-x-full'); $('#overlay').classList.remove('hidden'); };
+actions['close-sidebar'] = closeSidebar;
+actions['modal-close'] = (el, e) => { if (e) e.preventDefault(); closeModal(); };
+actions['modal-submit'] = (el, e) => { if (e) e.preventDefault(); if (modalSubmit) modalSubmit(); };
+actions['reset'] = () => confirmModal({
+  title: 'Reset to Master Portfolio?',
+  message: 'This clears every local edit (deliverables, sprint phases, projects, generated outputs, settings and your API key) and restores the original portfolio data. This cannot be undone.',
+  confirmLabel: 'Reset everything',
+  onConfirm: () => {
+    try { localStorage.removeItem(KEY); } catch (e) { /* storage unavailable */ }
+    state = getDefaults();
+    ui.dStatus = 'All'; ui.dPhase = 'All'; ui.pCompany = 'All'; ui.pPlatform = 'All'; ui.pYear = 'All'; ui.pEdit = null; ui.pSort = { key: '', dir: 'asc' };
+    refreshEverything();
+    toast('🔄 Workspace restored to the master portfolio');
+  }
+});
+
+/* =====================================================================
+   DASHBOARD 2: SPRINT & DOCUMENTATION TIMELINE TRACKER
+   ===================================================================== */
+const D_STATUSES = ['Completed', 'In Progress', 'Not Started'];
+const stClass = s => ({ 'Completed': 'st-ok', 'Done': 'st-ok', 'In Progress': 'st-prog', 'Ongoing': 'st-prog' }[s] || 'st-none');
+const sortedPhases = () => state.phases.slice().sort((a, b) => String(a.start).localeCompare(String(b.start)));
+const phaseName = id => { const p = state.phases.find(x => x.id === id); return p ? p.name : 'Unassigned'; };
+let sprintChart = null;
+
+function getActivePhase() {
+  const t = todayISO(), ph = sortedPhases();
+  return ph.find(p => p.start <= t && t <= p.end) || ph.find(p => Number(p.progress) < 100) || ph[ph.length - 1] || null;
+}
+
+function renderSprint() {
+  const root = $('#view-sprint'), t = todayISO();
+  const active = getActivePhase(), phases = sortedPhases();
+  const list = state.deliverables.filter(d => (ui.dStatus === 'All' || d.status === ui.dStatus) && (ui.dPhase === 'All' || d.phaseId === ui.dPhase));
+  const total = state.deliverables.length, completed = state.deliverables.filter(d => d.status === 'Completed').length;
+
+  let banner;
+  if (active) {
+    const left = daysBetween(t, active.end);
+    const label = left >= 0 ? (left === 0 ? 'Ends today' : left + ' day' + (left === 1 ? '' : 's') + ' remaining') : 'Ended ' + Math.abs(left) + ' day' + (Math.abs(left) === 1 ? '' : 's') + ' ago';
+    const dl = state.deliverables.filter(d => d.phaseId === active.id), done = dl.filter(d => d.status === 'Completed').length;
+    banner = '<div class="rounded-2xl p-6 text-white bg-gradient-to-r from-emerald-950 via-slate-900 to-emerald-900/70 border border-emerald-500/30 shadow-lg shadow-emerald-500/10 mb-5 slide-up"><div class="flex flex-wrap items-center gap-6">' +
+      '<div class="min-w-[220px]"><div class="text-sm text-emerald-300 font-medium">Active sprint</div><div class="text-3xl font-bold mt-1">' + esc(active.name) + '</div><div class="text-sm text-gray-300 mt-1">' + fmtDate(active.start) + ' to ' + fmtDate(active.end) + '</div></div>' +
+      '<div class="flex-1 min-w-[220px]"><div class="flex justify-between text-sm mb-2"><span>Phase progress</span><span class="font-semibold">' + Number(active.progress) + '%</span></div><div class="h-3 rounded-full bg-white/20 overflow-hidden"><div class="h-full rounded-full bg-[#10B981] transition-all duration-500" style="width:' + clamp(Number(active.progress), 0, 100) + '%"></div></div><div class="text-xs text-orange-300 mt-2">' + label + '</div></div>' +
+      '<div class="flex gap-6 text-center"><div><div class="text-2xl font-bold">' + done + '/' + dl.length + '</div><div class="text-xs text-gray-300">Phase deliverables done</div></div><div><div class="text-2xl font-bold">' + completed + '/' + total + '</div><div class="text-xs text-gray-300">All deliverables done</div></div></div></div></div>';
+  } else {
+    banner = '<div class="card mb-5">' + emptyState('🗓️', 'No sprint phases yet', 'Add your first phase to see the active sprint banner and the timeline chart.') + '</div>';
+  }
+
+  const phaseCards = phases.map(p => '<div class="card p-4 fade-in"><div class="flex items-start justify-between gap-2"><div><div class="font-semibold text-gray-100">' + esc(p.name) + '</div><div class="text-xs text-gray-400">' + fmtShort(p.start) + ' to ' + fmtShort(p.end) + '</div></div>' +
+    '<div class="flex gap-1"><button class="btn btn-secondary btn-sm" data-action="edit-phase" data-id="' + p.id + '" title="Edit phase" aria-label="Edit phase">✏️</button><button class="btn btn-danger btn-sm" data-action="del-phase" data-id="' + p.id + '" title="Delete phase" aria-label="Delete phase">🗑️</button></div></div>' +
+    (p.desc ? '<p class="text-xs text-gray-400 mt-2 line-clamp-3" title="' + esc(p.desc) + '">' + esc(p.desc) + '</p>' : '') + '<div class="flex items-center gap-3 mt-3"><input type="range" min="0" max="100" step="5" value="' + Number(p.progress) + '" class="flex-1" data-change="phase-progress" data-range="1" data-id="' + p.id + '" aria-label="Progress for ' + esc(p.name) + '"><span class="pv text-sm font-semibold w-12 text-right ' + (Number(p.progress) >= 100 ? 'text-emerald-400' : 'text-gray-200') + '">' + Number(p.progress) + '%</span></div></div>').join('');
+
+  const rowHtml = d => {
+    const overdue = d.status !== 'Completed' && d.end < t;
+    return '<tr class="fade-in"><td><div class="font-medium text-gray-100">' + esc(d.name) + '</div>' + (overdue ? '<span class="badge bg-red-500/10 text-red-400 mt-1">⏰ Overdue</span>' : '') + '</td>' +
+      '<td><span class="badge bg-white/10 text-gray-300">' + esc(d.category) + '</span></td>' +
+      '<td><input type="date" class="field auto sm" value="' + esc(d.start) + '" data-change="d-start" data-id="' + d.id + '" aria-label="Target start date"></td>' +
+      '<td><input type="date" class="field auto sm" value="' + esc(d.end) + '" data-change="d-end" data-id="' + d.id + '" aria-label="Target end date"></td>' +
+      '<td><select class="status-select ' + stClass(d.status) + '" data-change="d-status" data-id="' + d.id + '" aria-label="Status">' + optionsHtml(D_STATUSES, d.status) + '</select></td>' +
+      '<td class="whitespace-nowrap"><button class="btn btn-secondary btn-sm" data-action="edit-deliv" data-id="' + d.id + '" aria-label="Edit deliverable">✏️ Edit</button> <button class="btn btn-danger btn-sm" data-action="del-deliv" data-id="' + d.id + '" aria-label="Delete deliverable">🗑️</button></td></tr>';
+  };
+  const filtering = ui.dStatus !== 'All' || ui.dPhase !== 'All';
+  const groups = phases.map(p => ({ p: p, items: list.filter(d => d.phaseId === p.id) }));
+  const orphans = list.filter(d => !phases.some(p => p.id === d.phaseId));
+  if (orphans.length) groups.push({ p: null, items: orphans });
+  const rows = groups.filter(g => g.items.length || (!filtering && g.p)).map(g => {
+    let head;
+    if (g.p) {
+      const all = state.deliverables.filter(d => d.phaseId === g.p.id), done = all.filter(d => d.status === 'Completed').length, pr = Number(g.p.progress);
+      head = '<tr class="phase-row"><td colspan="6"><div class="flex flex-wrap items-center gap-x-3 gap-y-1"><span class="font-semibold text-emerald-300">' + esc(g.p.name) + '</span><span class="text-xs text-gray-400">' + fmtShort(g.p.start) + ' to ' + fmtShort(g.p.end) + '</span><span class="badge ' + (pr >= 100 ? 'st-ok' : 'st-prog') + ' border">' + pr + '% complete</span><span class="text-xs text-gray-400 ml-auto">' + done + ' of ' + all.length + ' deliverables done</span></div></td></tr>';
+    } else head = '<tr class="phase-row"><td colspan="6"><span class="font-semibold text-gray-300">Unassigned</span></td></tr>';
+    return head + (g.items.length ? g.items.map(rowHtml).join('') : '<tr><td colspan="6" class="text-sm text-gray-500 italic">No deliverables in this phase yet. Use + Add Deliverable to add one.</td></tr>');
+  }).join('');
+
+  root.innerHTML = banner +
+    '<div class="flex flex-wrap items-end gap-5 mb-5">' +
+    '<div><label class="lbl">Status</label><select class="field auto" data-change="f-d-status">' + optionsHtml(['All'].concat(D_STATUSES), ui.dStatus) + '</select></div>' +
+    '<div><label class="lbl">Sprint phase</label><select class="field auto" data-change="f-d-phase">' + optionsHtml([{ value: 'All', label: 'All' }].concat(phases.map(p => ({ value: p.id, label: p.name }))), ui.dPhase) + '</select></div>' +
+    ((ui.dStatus !== 'All' || ui.dPhase !== 'All') ? '<button class="btn btn-secondary" data-action="clear-d-filters">Clear filters</button>' : '') +
+    '<div class="ml-auto flex flex-wrap gap-2"><button class="btn btn-secondary" data-action="add-phase">+ Add Sprint Phase</button><button class="btn btn-primary" data-action="add-deliv">+ Add Deliverable</button></div></div>' +
+    '<div class="card p-5 mb-5"><div class="flex items-center justify-between mb-3"><div><h2 class="font-semibold text-gray-100">Sprint phase progress</h2><p class="hint">Green bars are complete phases. Dates show each phase window.</p></div></div>' +
+    (phases.length ? '<div style="height:' + Math.max(240, phases.length * 74 + 90) + 'px"><canvas id="sprintChart"></canvas></div>' : emptyState('📈', 'Nothing to chart yet', 'Add a sprint phase to see progress by stage.')) + '</div>' +
+    (phases.length ? '<div class="grid sm:grid-cols-2 xl:grid-cols-4 gap-5 mb-5">' + phaseCards + '</div>' : '') +
+    '<div class="card overflow-hidden"><div class="px-5 py-4 border-b border-white/5 flex items-center justify-between"><div><h2 class="font-semibold text-gray-100">Documentation deliverables by phase</h2><p class="hint">' + list.length + ' of ' + total + ' shown. Change dates and status inline.</p></div></div>' +
+    ((list.length || (!filtering && phases.length)) ? '<div class="overflow-x-auto"><table class="tbl"><thead><tr><th>Document name</th><th>Category</th><th>Target start</th><th>Target end</th><th>Status</th><th>Actions</th></tr></thead><tbody>' + rows + '</tbody></table></div>'
+      : emptyState('📄', total ? 'No deliverables match these filters' : 'No deliverables yet', total ? 'Clear the filters to see every document.' : 'Add a deliverable to start tracking your documentation.')) + '</div>';
+  drawSprintChart();
+}
+
+const pctLabelPlugin = {
+  id: 'pctLabel',
+  afterDatasetsDraw(chart) {
+    const ctx = chart.ctx, meta = chart.getDatasetMeta(0);
+    ctx.save(); ctx.font = '600 12px Inter, sans-serif'; ctx.textBaseline = 'middle';
+    meta.data.forEach((bar, i) => {
+      const v = chart.data.datasets[0].data[i];
+      if (v >= 14) { ctx.fillStyle = '#fff'; ctx.textAlign = 'right'; ctx.fillText(v + '%', bar.x - 8, bar.y); }
+      else { ctx.fillStyle = '#E5E7EB'; ctx.textAlign = 'left'; ctx.fillText(v + '%', bar.x + 8, bar.y); }
+    });
+    ctx.restore();
+  }
+};
+
+function phaseChartLabel(p) {
+  const m = String(p.name).match(/^(.*?)(?::\s*|\s*\()(.+?)\)?$/);
+  return (m ? [m[1], m[2]] : [p.name]).concat(fmtShort(p.start) + ' to ' + fmtShort(p.end));
+}
+
+function drawSprintChart() {
+  if (sprintChart) { sprintChart.destroy(); sprintChart = null; }
+  const c = $('#sprintChart');
+  if (!c || !window.Chart) return;
+  const ph = sortedPhases();
+  sprintChart = new Chart(c, {
+    type: 'bar',
+    data: {
+      labels: ph.map(phaseChartLabel),
+      datasets: [
+        { label: 'Complete', data: ph.map(p => clamp(Number(p.progress), 0, 100)), backgroundColor: ph.map(p => (Number(p.progress) >= 100 ? '#10B981' : '#34D399')), borderRadius: 6, stack: 's', barPercentage: .7 },
+        { label: 'Remaining', data: ph.map(p => 100 - clamp(Number(p.progress), 0, 100)), backgroundColor: 'rgba(255,255,255,.1)', borderRadius: 6, stack: 's', barPercentage: .7 }
+      ]
+    },
+    options: {
+      indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+      scales: { x: { stacked: true, max: 100, ticks: { callback: v => v + '%' }, grid: { color: 'rgba(255,255,255,.06)' } }, y: { stacked: true, grid: { display: false } } },
+      plugins: {
+        legend: { position: 'bottom' },
+        tooltip: { callbacks: { title: it => ph[it[0].dataIndex].name, label: ctx => ctx.dataset.label + ': ' + ctx.parsed.x + '%', afterBody: it => fmtDate(ph[it[0].dataIndex].start) + ' to ' + fmtDate(ph[it[0].dataIndex].end) } }
+      }
+    },
+    plugins: [pctLabelPlugin]
+  });
+}
+
+function phaseForm(p) {
+  formModal({
+    title: p ? 'Edit sprint phase' : 'Add sprint phase', submitLabel: p ? 'Save changes' : 'Add phase',
+    fields: [
+      { name: 'name', label: 'Phase name', required: true, value: p ? p.name : '', placeholder: 'e.g. Sprint 3', requiredMsg: 'Give the phase a name' },
+      { name: 'desc', label: 'Scope / focus (optional)', type: 'textarea', value: p ? (p.desc || '') : '', placeholder: 'What happens in this phase?' },
+      { name: 'start', label: 'Start date', type: 'date', required: true, half: true, value: p ? p.start : todayISO() },
+      { name: 'end', label: 'Target end date', type: 'date', required: true, half: true, value: p ? p.end : '' },
+      { name: 'progress', label: 'Progress (%)', type: 'number', min: 0, max: 100, required: true, value: p ? p.progress : 0 }
+    ],
+    validate: v => {
+      if (v.end < v.start) return { field: 'end', msg: 'End date must be on or after the start date' };
+      const n = Number(v.progress); if (isNaN(n) || n < 0 || n > 100) return { field: 'progress', msg: 'Enter a number from 0 to 100' };
+      return null;
+    },
+    onSubmit: v => {
+      const data = { name: v.name, desc: v.desc, start: v.start, end: v.end, progress: Math.round(Number(v.progress)) };
+      if (p) Object.assign(p, data); else state.phases.push(Object.assign({ id: uid('ph') }, data));
+      save(); renderSprint(); toast('✅ Saved successfully');
+    }
+  });
+}
+
+function deliverableForm(d) {
+  const cats = Array.from(new Set(state.deliverables.map(x => x.category).filter(Boolean)));
+  const phaseOpts = [{ value: '', label: 'Unassigned' }].concat(sortedPhases().map(p => ({ value: p.id, label: p.name })));
+  const act = getActivePhase();
+  formModal({
+    title: d ? 'Edit deliverable' : 'Add deliverable', submitLabel: d ? 'Save changes' : 'Add deliverable',
+    fields: [
+      { name: 'name', label: 'Document name', required: true, value: d ? d.name : '', placeholder: 'e.g. Business Requirements Document', requiredMsg: 'Enter the document name' },
+      { name: 'category', label: 'Category', required: true, half: true, list: cats, value: d ? d.category : '', placeholder: 'e.g. Requirements', requiredMsg: 'Choose or type a category' },
+      { name: 'phaseId', label: 'Agile sprint phase', type: 'select', half: true, options: phaseOpts, value: d ? d.phaseId : (act ? act.id : '') },
+      { name: 'start', label: 'Target start date', type: 'date', required: true, half: true, value: d ? d.start : todayISO() },
+      { name: 'end', label: 'Target end date', type: 'date', required: true, half: true, value: d ? d.end : '' },
+      { name: 'status', label: 'Status', type: 'select', options: D_STATUSES, value: d ? d.status : 'Not Started' }
+    ],
+    validate: v => (v.end < v.start ? { field: 'end', msg: 'End date must be on or after the start date' } : null),
+    onSubmit: v => {
+      if (d) Object.assign(d, v);
+      else {
+        state.deliverables.push(Object.assign({ id: uid('dl') }, v));
+        if ((ui.dStatus !== 'All' && ui.dStatus !== v.status) || (ui.dPhase !== 'All' && ui.dPhase !== v.phaseId)) { ui.dStatus = 'All'; ui.dPhase = 'All'; }
+      }
+      save(); renderSprint(); toast('✅ Saved successfully');
+    }
+  });
+}
+
+actions['add-phase'] = () => phaseForm(null);
+actions['edit-phase'] = el => { const p = state.phases.find(x => x.id === el.dataset.id); if (p) phaseForm(p); };
+actions['del-phase'] = el => {
+  const p = state.phases.find(x => x.id === el.dataset.id); if (!p) return;
+  confirmModal({
+    title: 'Delete "' + p.name + '"?', message: 'Deliverables in this phase will stay in the table and show as Unassigned.', confirmLabel: 'Delete phase',
+    onConfirm: () => { state.phases = state.phases.filter(x => x.id !== p.id); state.deliverables.forEach(d => { if (d.phaseId === p.id) d.phaseId = ''; }); if (ui.dPhase === p.id) ui.dPhase = 'All'; save(); renderSprint(); toast('🗑️ Phase deleted'); }
+  });
+};
+actions['add-deliv'] = () => deliverableForm(null);
+actions['edit-deliv'] = el => { const d = state.deliverables.find(x => x.id === el.dataset.id); if (d) deliverableForm(d); };
+actions['del-deliv'] = el => {
+  const d = state.deliverables.find(x => x.id === el.dataset.id); if (!d) return;
+  confirmModal({ title: 'Delete this deliverable?', message: '"' + d.name + '" will be removed from the tracker.', confirmLabel: 'Delete', onConfirm: () => { state.deliverables = state.deliverables.filter(x => x.id !== d.id); save(); renderSprint(); toast('🗑️ Deliverable deleted'); } });
+};
+actions['clear-d-filters'] = () => { ui.dStatus = 'All'; ui.dPhase = 'All'; renderSprint(); };
+
+changes['f-d-status'] = el => { ui.dStatus = el.value; renderSprint(); };
+changes['f-d-phase'] = el => { ui.dPhase = el.value; renderSprint(); };
+changes['d-status'] = el => { const d = state.deliverables.find(x => x.id === el.dataset.id); if (!d) return; d.status = el.value; save(); renderSprint(); toast('✅ Saved successfully'); };
+function changeDate(el, field) {
+  const d = state.deliverables.find(x => x.id === el.dataset.id); if (!d) return;
+  if (!el.value) { renderSprint(); return; }
+  const s = field === 'start' ? el.value : d.start, e = field === 'end' ? el.value : d.end;
+  if (e < s) { toast('⚠️ The end date cannot be before the start date', 'error'); renderSprint(); return; }
+  d[field] = el.value; save(); renderSprint(); toast('✅ Saved successfully');
+}
+changes['d-start'] = el => changeDate(el, 'start');
+changes['d-end'] = el => changeDate(el, 'end');
+changes['phase-progress'] = el => { const p = state.phases.find(x => x.id === el.dataset.id); if (!p) return; p.progress = Number(el.value); save(); renderSprint(); toast('✅ Saved successfully'); };
+
+/* =====================================================================
+   DASHBOARD 1: CAREER PROJECT & ENHANCEMENT PORTFOLIO TRACKER
+   ===================================================================== */
+const P_STATUSES = ['Done', 'Ongoing'];
+const PALETTE = ['#10B981', '#F97316', '#34D399', '#FB923C', '#14B8A6', '#FDBA74', '#6EE7B7', '#94A3B8'];
+let projCharts = {};
+
+const uniq = key => Array.from(new Set(state.projects.map(p => p[key]).filter(v => v !== '' && v != null)));
+function filteredProjects() {
+  return state.projects.filter(p => (ui.pCompany === 'All' || p.client === ui.pCompany) && (ui.pPlatform === 'All' || p.platform === ui.pPlatform) && (ui.pYear === 'All' || String(p.year) === ui.pYear));
+}
+function sortProjects(list) {
+  const s = ui.pSort; if (!s.key) return list;
+  const dir = s.dir === 'asc' ? 1 : -1;
+  return list.map((p, i) => [p, i]).sort((a, b) => {
+    const x = a[0][s.key], y = b[0][s.key];
+    const c = typeof x === 'number' && typeof y === 'number' ? x - y : String(x).localeCompare(String(y));
+    return c ? c * dir : a[1] - b[1];
+  }).map(a => a[0]);
+}
+
+function renderPortfolio() {
+  const root = $('#view-portfolio');
+  // Reset any filter that no longer matches existing data (e.g. after deleting the last record)
+  if (ui.pCompany !== 'All' && !uniq('client').includes(ui.pCompany)) ui.pCompany = 'All';
+  if (ui.pPlatform !== 'All' && !uniq('platform').includes(ui.pPlatform)) ui.pPlatform = 'All';
+  if (ui.pYear !== 'All' && !uniq('year').map(String).includes(ui.pYear)) ui.pYear = 'All';
+
+  const list = filteredProjects(), shown = sortProjects(list);
+  const done = list.filter(p => p.status === 'Done').length, ongoing = list.length - done;
+  const rate = list.length ? Math.round(done / list.length * 100) : 0;
+  const filtered = ui.pCompany !== 'All' || ui.pPlatform !== 'All' || ui.pYear !== 'All';
+  const gauge = pct => { const full = pct >= 100, col = full ? '#10B981' : '#F97316', txt = full ? '#6EE7B7' : '#FDBA74', glow = full ? '16,185,129' : '249,115,22'; return '<div class="card px-4 py-2.5 slide-up flex items-center justify-between"><div><div class="text-xs text-gray-400 font-medium">Completion rate</div><div class="text-xs text-gray-400 mt-0.5">of the projects shown</div></div><svg width="48" height="48" viewBox="0 0 64 64" role="img" aria-label="Completion rate ' + pct + ' percent"><circle cx="32" cy="32" r="26" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="7"/><circle cx="32" cy="32" r="26" fill="none" stroke="' + col + '" stroke-width="7" stroke-linecap="round" stroke-dasharray="' + (163.36 * pct / 100).toFixed(2) + ' 163.36" transform="rotate(-90 32 32)" style="filter:drop-shadow(0 0 5px rgba(' + glow + ',.65))"/><text x="32" y="37" text-anchor="middle" font-size="15" font-weight="700" fill="' + txt + '" font-family="Inter, sans-serif">' + pct + '%</text></svg></div>'; };
+  const kpi = (icon, label, val, tone, vc) => '<div class="card px-4 py-2.5 slide-up flex items-center justify-between"><div><div class="text-xs text-gray-400 font-medium">' + label + '</div><div class="text-2xl font-bold ' + (vc || 'text-gray-100') + ' leading-8">' + val + '</div></div><div class="w-9 h-9 rounded-lg flex items-center justify-center text-base ' + tone + '">' + icon + '</div></div>';
+  const sortHead = (key, label) => '<th class="sortable" data-action="p-sort" data-key="' + key + '">' + label + (ui.pSort.key === key ? (ui.pSort.dir === 'asc' ? ' ▲' : ' ▼') : '') + '</th>';
+  const clients = uniq('client'), platforms = uniq('platform'), years = uniq('year').map(Number).sort((a, b) => b - a).map(String);
+
+  const rows = shown.map((p, i) => {
+    if (ui.pEdit === p.id) {
+      return '<tr class="bg-emerald-500/5"><td class="text-gray-400">' + (i + 1) + '</td>' +
+        '<td><div class="field-wrap"><input id="pe_client" class="field sm" list="pe_clients" value="' + esc(p.client) + '"><datalist id="pe_clients">' + clients.map(c => '<option value="' + esc(c) + '">').join('') + '</datalist></div></td>' +
+        '<td><div class="field-wrap"><input id="pe_name" class="field sm" value="' + esc(p.name) + '"></div></td>' +
+        '<td><div class="field-wrap"><input id="pe_platform" class="field sm" list="pe_platforms" value="' + esc(p.platform) + '"><datalist id="pe_platforms">' + platforms.map(c => '<option value="' + esc(c) + '">').join('') + '</datalist></div></td>' +
+        '<td><div class="field-wrap"><input id="pe_year" type="number" min="2000" max="2100" class="field sm" style="width:5.5rem" value="' + esc(p.year) + '"></div></td>' +
+        '<td><select id="pe_status" class="field sm auto">' + optionsHtml(P_STATUSES, p.status) + '</select></td>' +
+        '<td class="whitespace-nowrap"><button class="btn btn-success btn-sm" data-action="save-project" data-id="' + p.id + '">Save</button> <button class="btn btn-secondary btn-sm" data-action="cancel-project">Cancel</button></td></tr>';
+    }
+    return '<tr class="fade-in row-h hover:bg-slate-800/50"><td class="text-gray-400">' + (i + 1) + '</td><td class="text-gray-300 whitespace-nowrap">' + esc(p.client) + '</td><td class="font-medium text-gray-100 min-w-[240px]">' + esc(p.name) + '</td>' +
+      '<td><span class="badge whitespace-nowrap bg-white/10 text-gray-300">' + esc(p.platform) + '</span></td><td>' + esc(p.year) + '</td>' +
+      '<td><select class="status-select ' + stClass(p.status) + '" data-change="p-status" data-id="' + p.id + '" aria-label="Status">' + optionsHtml(P_STATUSES, p.status) + '</select></td>' +
+      '<td class="whitespace-nowrap"><button class="btn btn-secondary btn-sm" data-action="edit-project" data-id="' + p.id + '" aria-label="Edit project">✏️ Edit</button> <button class="btn btn-danger btn-sm" data-action="del-project" data-id="' + p.id + '" aria-label="Delete project">🗑️</button></td></tr>';
+  }).join('');
+
+  const chartCard = (title, hint, id) => '<div class="card p-3"><div class="flex items-baseline justify-between gap-3 mb-2 px-1"><h3 class="font-semibold text-gray-100 text-sm whitespace-nowrap shrink-0">' + title + '</h3><p class="hint truncate min-w-0">' + hint + '</p></div>' + (list.length ? '<div class="relative h-[clamp(130px,21vh,256px)]"><canvas id="' + id + '"></canvas></div>' : emptyState('📉', 'No data for this filter', 'Clear a filter to see the chart.')) + '</div>';
+
+  root.innerHTML =
+    '<div class="grid grid-cols-2 xl:grid-cols-4 gap-5 mb-5">' +
+    kpi('📁', 'Total projects handled', list.length, 'bg-emerald-500/15') + kpi('🏁', 'Completed projects', done, 'bg-emerald-500/10') +
+    kpi('🚧', 'Ongoing projects', ongoing, 'bg-orange-500/15', 'text-orange-400') + gauge(rate) + '</div>' +
+    '<div class="card px-5 py-2.5 mb-5 flex flex-wrap items-end gap-5">' +
+    '<div class="min-w-[200px] flex-1"><label class="lbl">Company / client</label><select class="field compact" data-change="f-p-company">' + optionsHtml(['All'].concat(clients), ui.pCompany) + '</select></div>' +
+    '<div class="min-w-[160px]"><label class="lbl">Platform</label><select class="field compact" data-change="f-p-platform">' + optionsHtml(['All'].concat(platforms), ui.pPlatform) + '</select></div>' +
+    '<div class="min-w-[120px]"><label class="lbl">Year</label><select class="field compact" data-change="f-p-year">' + optionsHtml(['All'].concat(years), ui.pYear) + '</select></div>' +
+    (filtered ? '<button class="btn btn-secondary" data-action="p-clear">Clear filters</button>' : '') +
+    '<button class="btn btn-primary ml-auto" data-action="add-project">+ Add Project</button></div>' +
+    '<div class="grid lg:grid-cols-3 gap-5 mb-5">' +
+    chartCard('Status mix', 'Completed versus ongoing', 'chStatus') +
+    chartCard('Projects by platform', 'Select a bar to filter by that platform', 'chPlatform') +
+    chartCard('Projects by year', 'Select a bar to filter by that year', 'chYear') + '</div>' +
+    '<div class="card overflow-hidden"><div class="px-5 py-2 border-b border-white/5 flex items-baseline justify-between gap-3"><h2 class="font-semibold text-gray-100 text-sm">Project register</h2><p class="hint">Showing ' + list.length + ' of ' + state.projects.length + ' records. Select a column title to sort.</p></div>' +
+    (shown.length ? '<div class="overflow-x-auto"><table class="tbl"><thead><tr><th>#</th>' + sortHead('client', 'Company / client') + sortHead('name', 'Project / enhancement') + sortHead('platform', 'Platform') + sortHead('year', 'Year') + sortHead('status', 'Status') + '<th>Actions</th></tr></thead><tbody>' + rows + '</tbody></table></div>'
+      : emptyState('🗂️', state.projects.length ? 'No projects match these filters' : 'No projects yet', state.projects.length ? 'Clear the filters to see every project.' : 'Add a project to build your portfolio, or reset to the master portfolio.')) + '</div>';
+  drawPortfolioCharts(list);
+}
+
+function countBy(list, key) { const m = {}; list.forEach(p => { m[p[key]] = (m[p[key]] || 0) + 1; }); return m; }
+
+function drawPortfolioCharts(list) {
+  Object.keys(projCharts).forEach(k => { if (projCharts[k]) projCharts[k].destroy(); });
+  projCharts = {};
+  if (!list.length || !window.Chart) return;
+  const hover = (e, els) => { if (e.native && e.native.target) e.native.target.style.cursor = els.length ? 'pointer' : 'default'; };
+  const done = list.filter(p => p.status === 'Done').length;
+  projCharts.status = new Chart($('#chStatus'), {
+    type: 'doughnut',
+    data: { labels: ['Completed', 'Ongoing'], datasets: [{ data: [done, list.length - done], backgroundColor: ['#10B981', '#F97316'], borderColor: '#0F172A', borderWidth: 3 }] },
+    options: { responsive: true, maintainAspectRatio: false, cutout: '64%', plugins: { legend: { position: 'right', labels: { boxWidth: 10, boxHeight: 10, padding: 8, font: { size: 11 } } } } }
+  });
+  const pc = countBy(list, 'platform'), pl = Object.keys(pc).sort((a, b) => pc[b] - pc[a]);
+  projCharts.platform = new Chart($('#chPlatform'), {
+    type: 'bar',
+    data: { labels: pl, datasets: [{ label: 'Projects', data: pl.map(k => pc[k]), backgroundColor: pl.map((k, i) => PALETTE[i % PALETTE.length]), borderRadius: 6, barPercentage: .7 }] },
+    options: {
+      indexAxis: 'y', responsive: true, maintainAspectRatio: false, onHover: hover,
+      onClick: (e, els) => { if (els.length) { ui.pPlatform = pl[els[0].index]; renderPortfolio(); } },
+      scales: { x: { beginAtZero: true, ticks: { precision: 0 }, grid: { color: 'rgba(255,255,255,.06)' } }, y: { grid: { display: false }, ticks: { autoSkip: false } } },
+      plugins: { legend: { display: false } }
+    }
+  });
+  const yrs = Array.from(new Set(list.map(p => p.year))).sort((a, b) => a - b);
+  projCharts.year = new Chart($('#chYear'), {
+    type: 'bar',
+    data: { labels: yrs.map(String), datasets: [
+      { label: 'Completed', data: yrs.map(y => list.filter(p => p.year === y && p.status === 'Done').length), backgroundColor: '#10B981', borderRadius: 4, stack: 'y' },
+      { label: 'Ongoing', data: yrs.map(y => list.filter(p => p.year === y && p.status !== 'Done').length), backgroundColor: '#F97316', borderRadius: 4, stack: 'y' }
+    ] },
+    options: {
+      responsive: true, maintainAspectRatio: false, onHover: hover,
+      onClick: (e, els) => { if (els.length) { ui.pYear = String(yrs[els[0].index]); renderPortfolio(); } },
+      scales: { y: { beginAtZero: true, stacked: true, ticks: { precision: 0 }, grid: { color: 'rgba(255,255,255,.06)' } }, x: { stacked: true, grid: { display: false } } },
+      plugins: { legend: { position: 'right', labels: { boxWidth: 10, boxHeight: 10, padding: 8, font: { size: 11 } } } }
+    }
+  });
+}
+
+function projectForm() {
+  formModal({
+    title: 'Add project', subtitle: 'Add a project or enhancement to your career portfolio.', submitLabel: 'Add project',
+    fields: [
+      { name: 'client', label: 'Company / client', required: true, list: uniq('client'), value: ui.pCompany !== 'All' ? ui.pCompany : '', requiredMsg: 'Enter the company or client' },
+      { name: 'name', label: 'Project / enhancement name', required: true, requiredMsg: 'Enter the project name' },
+      { name: 'platform', label: 'Platform', required: true, half: true, list: uniq('platform'), requiredMsg: 'Choose or type a platform' },
+      { name: 'year', label: 'Year', type: 'number', min: 2000, max: 2100, required: true, half: true, value: new Date().getFullYear(), requiredMsg: 'Enter a year' },
+      { name: 'status', label: 'Status', type: 'select', options: P_STATUSES, value: 'Done' }
+    ],
+    validate: v => { const y = Number(v.year); return (!Number.isInteger(y) || y < 2000 || y > 2100) ? { field: 'year', msg: 'Enter a year between 2000 and 2100' } : null; },
+    onSubmit: v => {
+      state.projects.push({ id: uid('pj'), client: v.client, name: v.name, platform: v.platform, year: Number(v.year), status: v.status });
+      if ((ui.pCompany !== 'All' && ui.pCompany !== v.client) || (ui.pPlatform !== 'All' && ui.pPlatform !== v.platform) || (ui.pYear !== 'All' && ui.pYear !== String(Number(v.year)))) { ui.pCompany = 'All'; ui.pPlatform = 'All'; ui.pYear = 'All'; }
+      save(); renderPortfolio(); toast('✅ Saved successfully'); }
+  });
+}
+
+actions['add-project'] = projectForm;
+actions['edit-project'] = el => { ui.pEdit = el.dataset.id; renderPortfolio(); const f = $('#pe_name'); if (f) f.focus(); };
+actions['cancel-project'] = () => { ui.pEdit = null; renderPortfolio(); };
+actions['save-project'] = el => {
+  const p = state.projects.find(x => x.id === el.dataset.id); if (!p) return;
+  const c = $('#pe_client'), n = $('#pe_name'), pf = $('#pe_platform'), y = $('#pe_year'), s = $('#pe_status');
+  let ok = true;
+  [[c, 'Enter the company or client'], [n, 'Enter the project name'], [pf, 'Enter a platform']].forEach(a => { if (!a[0].value.trim()) { setInvalid(a[0], a[1]); ok = false; } else clearInvalid(a[0]); });
+  const yr = Number(y.value);
+  if (!Number.isInteger(yr) || yr < 2000 || yr > 2100) { setInvalid(y, 'Year: 2000 to 2100'); ok = false; } else clearInvalid(y);
+  if (!ok) return;
+  Object.assign(p, { client: c.value.trim(), name: n.value.trim(), platform: pf.value.trim(), year: yr, status: s.value });
+  ui.pEdit = null; save(); renderPortfolio(); toast('✅ Saved successfully');
+};
+actions['del-project'] = el => {
+  const p = state.projects.find(x => x.id === el.dataset.id); if (!p) return;
+  confirmModal({ title: 'Delete this project?', message: '"' + p.name + '" will be removed from your portfolio. Use Reset to Master Portfolio to restore the original list.', confirmLabel: 'Delete', onConfirm: () => { state.projects = state.projects.filter(x => x.id !== p.id); save(); renderPortfolio(); toast('🗑️ Project deleted'); } });
+};
+actions['p-clear'] = () => { ui.pCompany = 'All'; ui.pPlatform = 'All'; ui.pYear = 'All'; renderPortfolio(); };
+actions['p-sort'] = el => {
+  const k = el.dataset.key;
+  if (ui.pSort.key === k) { if (ui.pSort.dir === 'asc') ui.pSort.dir = 'desc'; else ui.pSort = { key: '', dir: 'asc' }; } else ui.pSort = { key: k, dir: 'asc' };
+  renderPortfolio();
+};
+changes['f-p-company'] = el => { ui.pCompany = el.value; renderPortfolio(); };
+changes['f-p-platform'] = el => { ui.pPlatform = el.value; renderPortfolio(); };
+changes['f-p-year'] = el => { ui.pYear = el.value; renderPortfolio(); };
+changes['p-status'] = el => { const p = state.projects.find(x => x.id === el.dataset.id); if (!p) return; p.status = el.value; save(); renderPortfolio(); toast('✅ Saved successfully'); };
+
+/* =====================================================================
+   SHARED HELPERS FOR THE AI WORKBENCH
+   ===================================================================== */
+const EXAMPLES = {
+  story: { sFeature: 'Allow customers to renew their motor insurance policy in the mobile app and pay the premium using an e-wallet.', sPersona: 'Policyholder', sContext: 'Reduce policy lapses and the number of manual renewal calls handled by the service desk.' },
+  diagram: { dDesc: 'A customer submits an insurance claim in the mobile app. The system validates the policy and the uploaded documents. A claims adjuster reviews the claim. If the amount is above the approval limit, a manager must approve it before the payout is released and the customer is notified.' },
+  uat: { uStory: 'As a policyholder, I want to renew my motor insurance policy in the mobile app and pay with an e-wallet, so that my coverage continues without a lapse.\n\nGiven my policy expires within 30 days\nWhen I choose Renew and confirm the payment\nThen the policy is extended and I receive a confirmation receipt\n\nGiven the e-wallet payment fails\nWhen I return to the renewal screen\nThen I can retry or choose another payment method without losing my entries' },
+  wire: { wName: 'Policy Renewal', wStory: 'As a policyholder, I want to review my expiring policy and pay the renewal premium so that my coverage continues without interruption.', wConstraints: 'Mobile-first, single column, primary action pinned at the bottom, accessible contrast.' }
+};
+
+function applyExample(obj, route) {
+  Object.keys(obj).forEach(k => { const el = document.getElementById(k); if (el) el.value = obj[k]; state.inputs[k] = obj[k]; });
+  save(); toast('✨ Example loaded. Select Generate to try it.', 'info');
+}
+
+function sendTo(inputKey, text, route, label) {
+  state.inputs[inputKey] = text;
+  const el = document.getElementById(inputKey); if (el) { el.value = text; clearInvalid(el); }
+  save(); go(route); toast('🔀 Sent to ' + label, 'info');
+}
+
+function featureName(text) {
+  const t = String(text || '').replace(/\*+/g, '');
+  const m = t.match(/I want\s+(?:to\s+)?([^\n]+)/i);
+  const n = cleanLine(m ? m[1] : t.replace(/^#+\s*[^\n]*\n?/, '') || t);
+  return truncate(n, 70) || 'the feature';
+}
+
+function capability(feature) {
+  const t = cleanLine(feature);
+  const m = t.match(/^(?:allow|enable|let|permit)\s+(?:[\w'-]+\s+){0,3}?to\s+(.+)$/i) || t.match(/^(?:the\s+)?(?:ability|option|capability)\s+to\s+(.+)$/i) || t.match(/^i\s+want\s+to\s+(.+)$/i);
+  return m ? lowerFirst(m[1]).replace(/\btheir\b/gi, 'my').replace(/\bthey\b/gi, 'I') : 'use the "' + truncate(t, 70) + '" capability';
+}
+
+/* =====================================================================
+   MOCK GENERATORS (Demo mode)
+   ===================================================================== */
+function mockStory(i) {
+  const cap = capability(i.feature), persona = i.persona || 'registered user';
+  const art = /^[aeiou]/i.test(persona) ? 'an' : 'a';
+  const short = truncate(cleanLine(i.feature), 80), title = short.charAt(0).toUpperCase() + short.slice(1);
+  const so = i.context ? 'the following business objective is achieved: ' + lowerFirst(cleanLine(i.context)) : 'I can complete this task quickly and accurately without contacting support';
+  return [
+    '## User Story', '',
+    '**As ' + art + '** ' + persona, '',
+    '**I want** to ' + cap, '',
+    '**So that** ' + so, '',
+    '## Acceptance Criteria (Gherkin)', '',
+    FENCE + 'gherkin',
+    'Feature: ' + title,
+    '  As ' + art + ' ' + persona,
+    '  I want to ' + cap,
+    '  So that ' + so,
+    '',
+    '  Background:',
+    '    Given I am signed in as ' + art + ' ' + persona,
+    '    And I have the access rights required for this feature',
+    '',
+    '  Scenario: Happy path - the primary flow completes',
+    '    Given I am on the starting screen for this feature',
+    '    When I provide all required information with valid values',
+    '    And I confirm the action',
+    '    Then the system processes my request successfully',
+    '    And I see a confirmation message with a reference number',
+    '',
+    '  Scenario: Mandatory information is missing',
+    '    Given I am on the starting screen for this feature',
+    '    When I try to continue without completing a required field',
+    '    Then the field is highlighted with a clear error message',
+    '    And no data is saved',
+    '',
+    '  Scenario: Invalid data is rejected',
+    '    Given I am on the starting screen for this feature',
+    '    When I enter a value in the wrong format',
+    '    Then the system explains the expected format',
+    '    And I can correct the value without losing my other entries',
+    '',
+    '  Scenario: Session expires during the flow',
+    '    Given I have been inactive past the session timeout',
+    '    When I try to confirm the action',
+    '    Then I am asked to sign in again',
+    '    And my progress is restored after I sign in',
+    '',
+    '  Scenario: A downstream service is unavailable',
+    '    Given the supporting service is not responding',
+    '    When I confirm the action',
+    '    Then I see a friendly error message with a retry option',
+    '    And the failure is logged for support follow-up',
+    '',
+    '  Scenario Outline: Input boundaries are enforced',
+    '    Given I am entering a value of "<value>" for the main input',
+    '    When I submit the form',
+    '    Then the system responds with "<result>"',
+    '',
+    '    Examples:',
+    '      | value             | result                           |',
+    '      | minimum allowed   | accepted                         |',
+    '      | maximum allowed   | accepted                         |',
+    '      | one above maximum | rejected with a clear message    |',
+    '      | empty             | rejected with a required message |',
+    FENCE, '',
+    '## Edge Cases', '',
+    '- The ' + persona + ' loses network connectivity midway and returns later.',
+    '- The same request is submitted twice (double tap or browser refresh).',
+    '- Two users or two devices change the same record at the same time.',
+    '- Data contains special characters, emojis, or very long text.',
+    '- The user has partial permissions, or their role changes during the session.',
+    '- A required third-party or downstream service responds slowly or times out.',
+    '- The request is made across a date boundary, cut-off time, or time zone change.', '',
+    '## Business Value', '',
+    '- **Efficiency:** removes manual hand-offs, reducing handling time per request.',
+    '- **Customer experience:** a self-service path available at any hour, with clear feedback.',
+    '- **Risk and compliance:** validations and audit logging reduce errors and support audits.',
+    '- **Traceability:** every Gherkin scenario maps directly to a UAT test case.',
+    '- **Suggested KPIs:** task completion rate, average completion time, support tickets raised, and defect leakage after release.'
+  ].join('\n');
+}
+
+function safeLabel(s, n) { return truncate(String(s).replace(/[^A-Za-z0-9 ,.\-\/]/g, ' ').replace(/\s+/g, ' ').trim(), n || 36) || 'Process'; }
+
+function mockDiagram(desc, type) {
+  const t = safeLabel(cleanLine(desc), 34);
+  if (type === 'swimlane') {
+    return [
+      'sequenceDiagram',
+      '  autonumber',
+      '  participant C as Customer / User',
+      '  participant B as Business Analyst',
+      '  participant S as System / IT',
+      '  participant A as Approver',
+      '  C->>B: Submit request - ' + t,
+      '  B->>B: Review and clarify requirements',
+      '  alt Request is incomplete',
+      '    B-->>C: Return with questions',
+      '    C->>B: Provide the missing details',
+      '  end',
+      '  B->>S: Send the complete request',
+      '  S->>S: Validate business rules',
+      '  S->>A: Request approval',
+      '  alt Request is rejected',
+      '    A-->>C: Reject with a reason',
+      '  else Request is approved',
+      '    A->>S: Approve the request',
+      '    S->>S: Record the outcome',
+      '    S-->>C: Send confirmation',
+      '  end'
+    ].join('\n');
+  }
+  if (type === 'bpmn') {
+    return [
+      'flowchart LR',
+      '  subgraph POOL [Process Pool - ' + t + ']',
+      '    S((Start)) --> T1[[Capture request]]',
+      '    T1 --> G1{Valid?}',
+      '    G1 -->|No| T2[[Request corrections]]',
+      '    T2 --> T1',
+      '    G1 -->|Yes| T3[[Check business rules]]',
+      '    T3 --> G2{Approval needed?}',
+      '    G2 -->|Yes| T4[[Obtain approval]]',
+      '    G2 -->|No| T5[[Execute process]]',
+      '    T4 --> T5',
+      '    T5 --> T6[[Update records]]',
+      '    T6 --> E(((End)))',
+      '  end',
+      '  EXT[External stakeholder] -.->|Message flow| T1',
+      '  T6 -.->|Notification| EXT',
+      '  classDef event fill:#D1FAE5,stroke:#10B981,stroke-width:2px',
+      '  classDef task fill:#D1FAE5,stroke:#10B981',
+      '  classDef gateway fill:#FFEDD5,stroke:#F97316',
+      '  class S,E event',
+      '  class T1,T2,T3,T4,T5,T6 task',
+      '  class G1,G2 gateway'
+    ].join('\n');
+  }
+  return [
+    'flowchart TD',
+    '  A([Start - ' + t + ']) --> B[Receive and log the request]',
+    '  B --> C{Is the request valid and complete?}',
+    '  C -->|No| D[Return to requester with feedback]',
+    '  D --> B',
+    '  C -->|Yes| E[Validate against business rules]',
+    '  E --> F{Approval required?}',
+    '  F -->|Yes| G[Route to approver]',
+    '  G --> H{Approved?}',
+    '  H -->|No| D',
+    '  H -->|Yes| I[Execute the process steps]',
+    '  F -->|No| I',
+    '  I --> J[(Update the system of record)]',
+    '  J --> K[Notify stakeholders]',
+    '  K --> L([End])',
+    '  classDef terminal fill:#D1FAE5,stroke:#10B981,color:#0F172A',
+    '  classDef decision fill:#FFEDD5,stroke:#F97316,color:#0F172A',
+    '  classDef store fill:#ECFDF5,stroke:#059669,color:#0F172A',
+    '  class A,L terminal',
+    '  class C,F,H decision',
+    '  class J store'
+  ].join('\n');
+}
+
+function mockUAT(story, scope) {
+  const n = featureName(story);
+  const pos = [
+    { type: 'Positive', scenario: 'Complete the primary flow with valid data', steps: ['Sign in as an authorised user', 'Open the screen where the user can ' + n, 'Enter valid values in every mandatory field', 'Submit the request'], expected: 'The request succeeds, a confirmation with a reference number is shown, and the data is saved correctly.' },
+    { type: 'Positive', scenario: 'Optional fields left blank', steps: ['Open the feature screen', 'Complete only the mandatory fields', 'Submit the request'], expected: 'Submission succeeds and optional values use the defaults defined in the acceptance criteria.' },
+    { type: 'Positive', scenario: 'Each permitted role can complete the flow', steps: ['Sign in with each role that has access', 'Repeat the primary flow for each role'], expected: 'Every permitted role completes the flow and sees only the data it is entitled to.' },
+    { type: 'Positive', scenario: 'Confirmation, notification and audit trail', steps: ['Complete the primary flow', 'Check the confirmation message and any email or push notification', 'Check the activity history for the new entry'], expected: 'The user is notified once, and an audit record shows who did what and when.' }
+  ];
+  const neg = [
+    { type: 'Negative', scenario: 'Mandatory field left empty', steps: ['Open the feature screen', 'Leave one mandatory field empty', 'Select Submit'], expected: 'The field is highlighted, a clear message is displayed, and nothing is saved.' },
+    { type: 'Negative', scenario: 'Invalid data format rejected', steps: ['Enter a value in the wrong format (for example letters in a numeric field)', 'Select Submit'], expected: 'The system explains the expected format and keeps the user\'s other entries.' },
+    { type: 'Negative', scenario: 'Unauthorised user is blocked', steps: ['Sign in as a user without access', 'Try to open the feature by menu and by direct link'], expected: 'Access is denied with a clear message, and no data is exposed.' },
+    { type: 'Negative', scenario: 'Session expires mid-flow', steps: ['Start the flow', 'Wait until the session times out', 'Select Submit'], expected: 'The user is asked to sign in again and returns without losing progress.' },
+    { type: 'Negative', scenario: 'Downstream service unavailable', steps: ['Make the supporting service unavailable', 'Complete the flow and submit'], expected: 'A friendly error with a retry option is shown, and the failure is logged.' }
+  ];
+  const bnd = [
+    { type: 'Boundary', scenario: 'Minimum allowed value accepted', steps: ['Enter the minimum allowed value', 'Submit the request'], expected: 'The value is accepted and processed.' },
+    { type: 'Boundary', scenario: 'Maximum allowed value accepted', steps: ['Enter the maximum allowed value', 'Submit the request'], expected: 'The value is accepted and processed.' },
+    { type: 'Boundary', scenario: 'One above the maximum is rejected', steps: ['Enter a value one unit above the maximum', 'Submit the request'], expected: 'The value is rejected with a message stating the allowed range.' },
+    { type: 'Boundary', scenario: 'Double submission is prevented', steps: ['Complete the form', 'Select Submit twice in quick succession'], expected: 'Only one record is created, and the second action is ignored.' }
+  ];
+  const pre = { Positive: 'The user is signed in with the required role and has valid information ready.', Negative: 'The user is signed in and the system is working normally.', Boundary: 'The user is signed in and is on the entry screen for this feature.' };
+  const all = scope === 'positive' ? pos : scope === 'negative' ? neg.concat(bnd) : pos.concat(neg, bnd);
+  return all.map(c => Object.assign({ ref: 'US-001', preconditions: pre[c.type] }, c));
+}
+
+function mockWireframe(name, story, constraints) {
+  const mobile = /\b(mobile|phone|ios|android|app)\b/i.test((constraints || '') + ' ' + (story || ''));
+  const short = truncate(name, 26);
+  return {
+    screenName: name, device: mobile ? 'mobile' : 'desktop',
+    primary: { components: [
+      { type: 'header', label: name },
+      { type: 'tabs', items: ['Overview', 'Details', 'History'], active: 0 },
+      { type: 'search', label: 'Search ' + lowerFirst(short) },
+      { type: 'cards', items: [{ title: 'Total', value: '128' }, { title: 'Pending', value: '14' }, { title: 'Done', value: '114' }] },
+      { type: 'table', columns: ['Reference', 'Customer', 'Status'], rows: [['REF-1001', 'Maria Santos', 'Active'], ['REF-1002', 'John Reyes', 'Pending'], ['REF-1003', 'Ana Cruz', 'Active']] },
+      { type: 'buttons', items: [{ label: 'Cancel', variant: 'secondary' }, { label: 'Add new', variant: 'primary' }] }
+    ] },
+    modal: { title: 'Add ' + lowerFirst(short), components: [
+      { type: 'text', label: 'Complete the details below to continue.' },
+      { type: 'input', label: 'Reference name', placeholder: 'Enter a name' },
+      { type: 'select', label: 'Category' },
+      { type: 'checkbox', label: 'I confirm the information is correct' }
+    ], actions: [{ label: 'Cancel', variant: 'secondary' }, { label: 'Save', variant: 'primary' }] }
+  };
+}
+
+/* =====================================================================
+   STATIC VIEW SHELLS (generator forms)
+   ===================================================================== */
+function formHeader(icon, title, text) {
+  return '<div class="flex items-center gap-3 mb-1"><span class="text-xl">' + icon + '</span><h2 class="text-lg font-semibold text-gray-100">' + title + '</h2></div><p class="text-sm text-gray-400 mb-5">' + text + '</p>';
+}
+const reqMark = ' <span class="text-red-500">*</span>';
+
+function buildStaticViews() {
+  const wrap = (form, outId) => '<div class="grid xl:grid-cols-5 gap-6 items-start"><div class="xl:col-span-2 card p-6 slide-up xl:sticky xl:top-24">' + form + '</div><div class="xl:col-span-3 card p-6 min-h-[420px] slide-up" id="' + outId + '"></div></div>';
+
+  $('#view-stories').innerHTML = wrap(
+    formHeader('📝', 'Feature input', 'Describe a feature in plain language. Add a persona and context for a sharper story.') +
+    '<div class="space-y-4">' +
+    '<div><label class="lbl" for="sFeature">Feature description' + reqMark + '</label><div class="field-wrap"><textarea id="sFeature" data-input rows="5" class="field" placeholder="e.g. Allow customers to renew their policy in the mobile app"></textarea></div></div>' +
+    '<div><label class="lbl" for="sPersona">Target persona <span class="font-normal text-gray-400">(optional)</span></label><div class="field-wrap"><input id="sPersona" data-input class="field" placeholder="e.g. Policyholder, Claims Adjuster"></div></div>' +
+    '<div><label class="lbl" for="sContext">Business context <span class="font-normal text-gray-400">(optional)</span></label><div class="field-wrap"><textarea id="sContext" data-input rows="3" class="field" placeholder="Why does this matter to the business?"></textarea></div></div>' +
+    '<div class="flex flex-wrap gap-2 pt-1"><button id="btn-story" class="btn btn-primary" data-action="story-generate">Generate story</button><button class="btn btn-secondary" data-action="story-example">Load example</button><button class="btn btn-secondary" data-action="clear-form" data-keys="sFeature,sPersona,sContext" data-out="story">Clear</button></div></div>', 'stories-output');
+
+  $('#view-diagrams').innerHTML = wrap(
+    formHeader('🔀', 'Process description', 'Describe the process in a few sentences. The diagram is drawn in your browser from Mermaid code.') +
+    '<div class="space-y-4">' +
+    '<div><label class="lbl" for="dDesc">Process description' + reqMark + '</label><div class="field-wrap"><textarea id="dDesc" data-input rows="7" class="field" placeholder="e.g. A customer submits a claim, the system validates it, an adjuster reviews it..."></textarea></div></div>' +
+    '<div><label class="lbl" for="dType">Diagram type</label><select id="dType" data-input class="field">' + optionsHtml(Object.keys(DIAGRAM_TYPES).map(k => ({ value: k, label: DIAGRAM_TYPES[k].label })), 'standard') + '</select></div>' +
+    '<div class="flex flex-wrap gap-2 pt-1"><button id="btn-diagram" class="btn btn-primary" data-action="diagram-generate">Generate diagram</button><button class="btn btn-secondary" data-action="diagram-example">Load example</button><button class="btn btn-secondary" data-action="clear-form" data-keys="dDesc" data-out="diagram">Clear</button></div></div>', 'diagram-output');
+
+  $('#view-uat').innerHTML = wrap(
+    formHeader('✅', 'Story and acceptance criteria', 'Paste a story with its criteria, or send one over from the User Story generator.') +
+    '<div class="space-y-4">' +
+    '<div><label class="lbl" for="uStory">User story and acceptance criteria' + reqMark + '</label><div class="field-wrap"><textarea id="uStory" data-input rows="9" class="field" placeholder="Paste a user story and its acceptance criteria here"></textarea></div></div>' +
+    '<div><label class="lbl" for="uScope">Test scope</label><select id="uScope" data-input class="field">' + optionsHtml(Object.keys(UAT_SCOPES).map(k => ({ value: k, label: UAT_SCOPES[k].label })), 'full') + '</select></div>' +
+    '<div class="flex flex-wrap gap-2 pt-1"><button id="btn-uat" class="btn btn-primary" data-action="uat-generate">Generate test cases</button><button class="btn btn-secondary" data-action="uat-example">Load example</button><button class="btn btn-secondary" data-action="clear-form" data-keys="uStory" data-out="uat">Clear</button></div></div>', 'uat-output');
+
+  $('#view-wireframes').innerHTML = wrap(
+    formHeader('🖼️', 'Screen details', 'Name the screen and add the story. You get a primary screen and a modal view side by side.') +
+    '<div class="space-y-4">' +
+    '<div><label class="lbl" for="wName">Screen name' + reqMark + '</label><div class="field-wrap"><input id="wName" data-input class="field" placeholder="e.g. Policy Renewal"></div></div>' +
+    '<div><label class="lbl" for="wStory">User story and acceptance criteria <span class="font-normal text-gray-400">(optional)</span></label><div class="field-wrap"><textarea id="wStory" data-input rows="6" class="field" placeholder="Paste a story or send one from the User Story generator"></textarea></div></div>' +
+    '<div><label class="lbl" for="wConstraints">UI/UX layout constraints <span class="font-normal text-gray-400">(optional)</span></label><div class="field-wrap"><textarea id="wConstraints" data-input rows="3" class="field" placeholder="e.g. Mobile-first, single column, sticky footer button"></textarea></div></div>' +
+    '<div class="flex flex-wrap gap-2 pt-1"><button id="btn-wire" class="btn btn-primary" data-action="wire-generate">Generate wireframe</button><button class="btn btn-secondary" data-action="wire-example">Load example</button><button class="btn btn-secondary" data-action="clear-form" data-keys="wName,wStory,wConstraints" data-out="wireframe">Clear</button></div></div>', 'wire-output');
+}
+
+function hydrateInputs() { $$('[data-input]').forEach(el => { const v = state.inputs[el.id]; el.value = v == null ? '' : v; }); }
+
+/* =====================================================================
+   MODULE 4: USER STORIES
+   ===================================================================== */
+function renderStoryOutput() {
+  const box = $('#stories-output'), o = state.outputs.story;
+  if (!o) { box.innerHTML = emptyState('📝', 'Your user story will appear here', 'Describe a feature on the left, then select Generate story. You get a story, Gherkin criteria, edge cases and business value.'); return; }
+  box.innerHTML = '<div class="fade-in"><div class="flex flex-wrap items-center gap-2 mb-5 pb-4 border-b border-white/5">' + modeChip(o.mode) +
+    '<div class="ml-auto flex flex-wrap gap-2"><button class="btn btn-primary btn-sm" data-action="story-copy">📋 Copy as Markdown</button>' +
+    '<button class="btn btn-secondary btn-sm" data-action="story-to-diagram">Send to Diagrammer</button><button class="btn btn-secondary btn-sm" data-action="story-to-uat">Send to UAT Generator</button><button class="btn btn-secondary btn-sm" data-action="story-to-wire">Send to Wireframer</button></div></div>' +
+    '<div class="md">' + renderMarkdown(o.markdown) + '</div></div>';
+}
+
+actions['story-example'] = () => applyExample(EXAMPLES.story);
+actions['story-generate'] = async el => {
+  if (el.disabled) return;
+  const f = $('#sFeature'); if (!requireField(f, 'Describe the feature to generate a story')) return;
+  const input = { feature: f.value.trim(), persona: $('#sPersona').value.trim(), context: $('#sContext').value.trim() };
+  setBusy(el, true); $('#stories-output').innerHTML = outputSkeleton('Drafting the user story and acceptance criteria…');
+  const user = 'Feature description: ' + input.feature + '\nTarget persona: ' + (input.persona || 'not specified (infer the most appropriate persona)') + '\nBusiness context: ' + (input.context || 'not specified');
+  try {
+    const r = await runAI({ feature: 'stories', task: TASKS.stories, user, mock: () => mockStory(input) });
+    state.outputs.story = { markdown: r.text.trim(), mode: r.mode, ts: Date.now() }; save();
+    toast(r.mode === 'live' ? '✅ User story generated with Gemini' : '✅ Demo user story generated');
+  } catch (e) { toast('❌ Could not generate the story: ' + truncate(e.message, 100), 'error'); }
+  finally { setBusy(el, false); renderStoryOutput(); }
+};
+actions['story-copy'] = () => { if (state.outputs.story) copyText(state.outputs.story.markdown, '📋 Copied as Markdown. Paste it into Jira or Confluence.'); };
+actions['story-to-diagram'] = () => { if (state.outputs.story) sendTo('dDesc', state.outputs.story.markdown, 'diagrams', 'the Diagrammer'); };
+actions['story-to-uat'] = () => { if (state.outputs.story) sendTo('uStory', state.outputs.story.markdown, 'uat', 'the UAT Generator'); };
+actions['story-to-wire'] = () => {
+  const o = state.outputs.story; if (!o) return;
+  if (!state.inputs.wName) { state.inputs.wName = truncate(featureName(o.markdown), 40); const n = $('#wName'); if (n) n.value = state.inputs.wName; }
+  sendTo('wStory', o.markdown, 'wireframes', 'the Wireframer');
+};
+
+/* =====================================================================
+   MODULE 5: DIAGRAMS (Mermaid.js)
+   ===================================================================== */
+function cleanMermaid(text) {
+  return String(text).trim().replace(/^```(?:mermaid)?\s*/i, '').replace(/```\s*$/, '').replace(/^mermaid\s*\n/i, '').trim();
+}
+
+function renderDiagramOutput() {
+  const box = $('#diagram-output'), o = state.outputs.diagram;
+  if (!o) { box.innerHTML = emptyState('🔀', 'Your diagram will appear here', 'Describe a process on the left and choose a diagram type. The vector diagram and its Mermaid code show up here.'); return; }
+  box.innerHTML = '<div class="fade-in"><div class="flex flex-wrap items-center gap-2 mb-4 pb-4 border-b border-white/5">' + modeChip(o.mode) + '<span class="badge bg-white/10 text-gray-300">' + esc((DIAGRAM_TYPES[o.type] || DIAGRAM_TYPES.standard).label) + '</span>' +
+    '<div class="ml-auto flex flex-wrap gap-2"><button class="btn btn-secondary btn-sm" data-action="diagram-copy">📋 Copy Mermaid Code</button><button class="btn btn-primary btn-sm" data-action="diagram-export">🖼️ Export Diagram Image</button></div></div>' +
+    '<div id="diagram-canvas" class="rounded-xl border border-emerald-500/20 paper p-4 overflow-auto flex justify-center min-h-[200px]"><div class="skeleton h-40 w-full"></div></div>' +
+    '<details class="mt-4 rounded-xl border border-white/10"><summary class="px-4 py-3 text-sm font-semibold text-gray-200 flex items-center gap-2"><span class="chev">▸</span> Mermaid source code</summary>' +
+    '<div class="px-4 pb-4"><textarea id="diagramCode" rows="10" spellcheck="false" class="field" style="font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.8rem">' + esc(o.code) + '</textarea><div class="flex gap-2 mt-2"><button class="btn btn-dark btn-sm" data-action="diagram-rerender">Re-render from code</button><span class="hint self-center">Edit the code and re-render to fine-tune the diagram.</span></div></div></details></div>';
+  drawMermaid(o.code);
+}
+
+async function drawMermaid(code) {
+  const host = $('#diagram-canvas'); if (!host) return;
+  const id = 'mmd' + Date.now();
+  try {
+    if (!window.mermaid) throw new Error('Mermaid.js did not load. Check your internet connection and reload the page.');
+    const res = await mermaid.render(id, code);
+    host.innerHTML = res.svg;
+  } catch (err) {
+    ['d' + id, id].forEach(x => { const n = document.getElementById(x); if (n) n.remove(); });
+    host.innerHTML = '<div class="w-full rounded-lg paper-err text-sm p-4"><div class="font-semibold mb-1">This diagram could not be drawn</div><div class="text-xs break-words">' + esc(String(err && err.message ? err.message : err).split('\n')[0]) + '</div><div class="text-xs mt-2">Open the Mermaid source below, fix the syntax, and select Re-render from code.</div></div>';
+  }
+}
+
+actions['diagram-example'] = () => applyExample(EXAMPLES.diagram);
+actions['diagram-generate'] = async el => {
+  if (el.disabled) return;
+  const d = $('#dDesc'); if (!requireField(d, 'Describe the process to generate a diagram')) return;
+  const type = $('#dType').value, desc = d.value.trim(), def = DIAGRAM_TYPES[type] || DIAGRAM_TYPES.standard;
+  setBusy(el, true); $('#diagram-output').innerHTML = outputSkeleton('Mapping the process steps…');
+  try {
+    const r = await runAI({ feature: 'diagrams', task: TASKS.diagrams + def.rule, user: 'Diagram type: ' + def.label + '\nProcess description:\n' + desc, mock: () => mockDiagram(desc, type) });
+    state.outputs.diagram = { code: cleanMermaid(r.text), type, mode: r.mode, ts: Date.now() }; save();
+    toast(r.mode === 'live' ? '✅ Diagram generated with Gemini' : '✅ Demo diagram generated');
+  } catch (e) { toast('❌ Could not generate the diagram: ' + truncate(e.message, 100), 'error'); }
+  finally { setBusy(el, false); renderDiagramOutput(); }
+};
+actions['diagram-copy'] = () => { if (state.outputs.diagram) copyText(state.outputs.diagram.code, '📋 Mermaid code copied'); };
+actions['diagram-rerender'] = () => {
+  const ta = $('#diagramCode'); if (!ta || !state.outputs.diagram) return;
+  if (!requireField(ta, 'Mermaid code cannot be empty')) return;
+  state.outputs.diagram.code = ta.value.trim(); save(); drawMermaid(state.outputs.diagram.code); toast('✅ Diagram re-rendered');
+};
+actions['diagram-export'] = async () => {
+  const svg = $('#diagram-canvas svg');
+  if (!svg) { toast('⚠️ Generate a valid diagram first', 'error'); return; }
+  const clone = svg.cloneNode(true), vb = (svg.getAttribute('viewBox') || '').split(/[\s,]+/).map(Number);
+  const box = svg.getBoundingClientRect();
+  const w = vb[2] > 0 ? vb[2] : Math.max(1, box.width), h = vb[3] > 0 ? vb[3] : Math.max(1, box.height);
+  clone.setAttribute('xmlns', 'http://www.w3.org/2000/svg'); clone.setAttribute('width', w); clone.setAttribute('height', h); clone.removeAttribute('style');
+  const str = new XMLSerializer().serializeToString(clone);
+  try { await svgToPng(str, w, h, 'process-diagram-' + todayISO() + '.png'); toast('🖼️ Diagram image downloaded'); }
+  catch (e) { download('process-diagram-' + todayISO() + '.svg', str, 'image/svg+xml'); toast('⚠️ PNG export was blocked, so an SVG file was downloaded instead', 'info'); }
+};
+
+/* =====================================================================
+   MODULE 6: UAT TEST CASES
+   ===================================================================== */
+const uatRowClass = r => (r === 'pass' ? 'bg-emerald-500/10' : r === 'fail' ? 'bg-red-500/10' : '');
+const TYPE_BADGE = { Positive: 'bg-emerald-500/10 text-emerald-300', Negative: 'bg-red-500/10 text-red-300', Boundary: 'bg-amber-500/10 text-amber-300' };
+
+function normalizeUAT(data) {
+  let arr = data;
+  if (arr && !Array.isArray(arr)) arr = arr.cases || arr.testCases || arr.test_cases || arr.tests;
+  if (!Array.isArray(arr) || !arr.length) throw new Error('No test cases were returned');
+  return arr.filter(c => c && typeof c === 'object').map((c, i) => ({
+    id: 'TC-' + String(i + 1).padStart(3, '0'),
+    type: ['Positive', 'Negative', 'Boundary'].includes(c.type) ? c.type : 'Positive',
+    scenario: String(c.scenario || c.title || 'Untitled scenario'),
+    steps: Array.isArray(c.steps) ? c.steps.map(String) : String(c.steps || '').split(/\n|;/).map(s => s.replace(/^\s*\d+[.)]\s*/, '').trim()).filter(Boolean),
+    expected: String(c.expected || c.expectedResult || c.expected_result || ''),
+    ref: String(c.ref || c.reference || c.traceability || c.storyRef || c.story_ref || ''),
+    preconditions: String(c.preconditions || c.precondition || ''),
+    result: ''
+  }));
+}
+
+function uatSummaryHtml() {
+  const cs = state.outputs.uat ? state.outputs.uat.cases : [];
+  const p = cs.filter(c => c.result === 'pass').length, f = cs.filter(c => c.result === 'fail').length, pend = cs.length - p - f;
+  const pct = cs.length ? Math.round((p + f) / cs.length * 100) : 0;
+  return '<div class="grid grid-cols-2 sm:grid-cols-4 gap-3"><div class="rounded-lg bg-white/5 p-3"><div class="text-xs text-gray-400">Total cases</div><div class="text-xl font-bold">' + cs.length + '</div></div>' +
+    '<div class="rounded-lg bg-emerald-500/10 p-3"><div class="text-xs text-emerald-300">Passed</div><div class="text-xl font-bold text-emerald-300">' + p + '</div></div>' +
+    '<div class="rounded-lg bg-red-500/10 p-3"><div class="text-xs text-red-300">Failed</div><div class="text-xl font-bold text-red-300">' + f + '</div></div>' +
+    '<div class="rounded-lg bg-orange-500/10 p-3"><div class="text-xs text-orange-300">Not yet run</div><div class="text-xl font-bold text-orange-300">' + pend + '</div></div></div>' +
+    '<div class="mt-3 flex items-center gap-3"><div class="flex-1 h-2 rounded-full bg-white/10 overflow-hidden"><div class="h-full bg-[#10B981] transition-all duration-300" style="width:' + pct + '%"></div></div><span class="text-xs font-semibold text-gray-300">' + pct + '% executed</span></div>';
+}
+function updateUatSummary() { const s = $('#uat-summary'); if (s) s.innerHTML = uatSummaryHtml(); }
+
+function renderUatOutput() {
+  const box = $('#uat-output'), o = state.outputs.uat;
+  if (!o) { box.innerHTML = emptyState('✅', 'Your test matrix will appear here', 'Add a story with acceptance criteria and pick a scope. You get test cases you can mark Pass or Fail and export to CSV.'); return; }
+  const rows = o.cases.map(c => '<tr class="' + uatRowClass(c.result) + '"><td class="font-semibold whitespace-nowrap">' + c.id + '</td>' +
+    '<td class="min-w-[180px]"><div class="font-medium text-gray-100">' + esc(c.scenario) + '</div><div class="flex flex-wrap gap-1 mt-1"><span class="badge ' + (TYPE_BADGE[c.type] || '') + '">' + c.type + '</span>' + (c.ref ? '<span class="badge bg-white/10 text-gray-300" title="Traceability reference">' + esc(c.ref) + '</span>' : '') + '</div></td>' +
+    '<td class="min-w-[170px] text-gray-300">' + esc(c.preconditions) + '</td>' +
+    '<td class="min-w-[240px]"><ol class="list-decimal ml-4 space-y-0.5 text-gray-300">' + c.steps.map(s => '<li>' + esc(s) + '</li>').join('') + '</ol></td>' +
+    '<td class="min-w-[200px] text-gray-300">' + esc(c.expected) + '</td>' +
+    '<td class="whitespace-nowrap"><div class="flex flex-col gap-2"><label class="chk pass"><input type="checkbox" data-change="uat-result" data-id="' + c.id + '" data-val="pass"' + (c.result === 'pass' ? ' checked' : '') + '> Pass</label><label class="chk fail"><input type="checkbox" data-change="uat-result" data-id="' + c.id + '" data-val="fail"' + (c.result === 'fail' ? ' checked' : '') + '> Fail</label></div></td></tr>').join('');
+  box.innerHTML = '<div class="fade-in"><div class="flex flex-wrap items-center gap-2 mb-4">' + modeChip(o.mode) + '<span class="badge bg-white/10 text-gray-300">' + esc((UAT_SCOPES[o.scope] || UAT_SCOPES.full).label) + '</span>' +
+    '<div class="ml-auto"><button class="btn btn-primary btn-sm" data-action="uat-csv">⬇️ Export Test Matrix as CSV</button></div></div>' +
+    '<div id="uat-summary" class="mb-5">' + uatSummaryHtml() + '</div>' +
+    '<div class="overflow-x-auto rounded-xl border border-white/10"><table class="tbl"><thead><tr><th>Test case ID</th><th>Test scenario</th><th>Preconditions</th><th>Execution steps</th><th>Expected result</th><th>Result</th></tr></thead><tbody>' + rows + '</tbody></table></div></div>';
+}
+
+actions['uat-example'] = () => applyExample(EXAMPLES.uat);
+actions['uat-generate'] = async el => {
+  if (el.disabled) return;
+  const s = $('#uStory'); if (!requireField(s, 'Add a user story and acceptance criteria first')) return;
+  const story = s.value.trim(), scope = $('#uScope').value, def = UAT_SCOPES[scope] || UAT_SCOPES.full;
+  setBusy(el, true); $('#uat-output').innerHTML = outputSkeleton('Building the test matrix…');
+  try {
+    const r = await runAI({ feature: 'uat', task: TASKS.uat + def.rule, user: 'Test scope: ' + def.label + '\nUser story and acceptance criteria:\n' + story, json: true, mock: () => JSON.stringify(mockUAT(story, scope)) });
+    let cases, mode = r.mode;
+    try { cases = normalizeUAT(parseJSON(r.text)); }
+    catch (err) {
+      if (r.mode !== 'live') throw err;
+      toast('⚠️ Gemini returned an unexpected format. Showing demo output instead.', 'error');
+      cases = normalizeUAT(mockUAT(story, scope)); mode = 'mock';
+    }
+    state.outputs.uat = { cases, scope, mode, ts: Date.now() }; save();
+    toast('✅ ' + cases.length + ' test cases generated');
+  } catch (e) { toast('❌ Could not generate test cases: ' + truncate(e.message, 100), 'error'); }
+  finally { setBusy(el, false); renderUatOutput(); }
+};
+changes['uat-result'] = el => {
+  const o = state.outputs.uat; if (!o) return;
+  const c = o.cases.find(x => x.id === el.dataset.id); if (!c) return;
+  c.result = el.checked ? el.dataset.val : '';
+  const row = el.closest('tr');
+  $$('input[data-change="uat-result"]', row).forEach(i => { i.checked = i.dataset.val === c.result; });
+  row.className = uatRowClass(c.result);
+  save(); updateUatSummary();
+};
+actions['uat-csv'] = () => {
+  const o = state.outputs.uat; if (!o) return;
+  const cell = v => '"' + String(v == null ? '' : v).replace(/"/g, '""') + '"';
+  const lines = [['Test Case ID', 'Type', 'Reference', 'Test Scenario', 'Preconditions', 'Execution Steps', 'Expected Result', 'Result'].map(cell).join(',')];
+  o.cases.forEach(c => lines.push([c.id, c.type, c.ref, c.scenario, c.preconditions, c.steps.map((s, i) => (i + 1) + '. ' + s).join('\n'), c.expected, c.result === 'pass' ? 'Pass' : c.result === 'fail' ? 'Fail' : 'Not run'].map(cell).join(',')));
+  download('uat-test-matrix-' + todayISO() + '.csv', '\ufeff' + lines.join('\r\n'), 'text/csv;charset=utf-8');
+  toast('⬇️ Test matrix exported as CSV');
+};
+
+/* =====================================================================
+   MODULE 7: WIREFRAMES (SVG rendering, PNG export)
+   ===================================================================== */
+const WFP = 16;
+function wt(x, y, t, o) {
+  o = o || {}; const size = o.size || 12; let s = String(t == null ? '' : t);
+  if (o.maxW) { const max = Math.max(2, Math.floor(o.maxW / (size * 0.56))); if (s.length > max) s = s.slice(0, max - 1) + '…'; }
+  return '<text x="' + x + '" y="' + y + '" font-family="Inter, Arial, Helvetica, sans-serif" font-size="' + size + '" font-weight="' + (o.weight || 400) + '" fill="' + (o.fill || '#334155') + '" text-anchor="' + (o.anchor || 'start') + '">' + esc(s) + '</text>';
+}
+function wr(x, y, w, h, o) {
+  o = o || {};
+  return '<rect x="' + x + '" y="' + y + '" width="' + w + '" height="' + h + '" rx="' + (o.r == null ? 6 : o.r) + '" fill="' + (o.fill || '#FFFFFF') + '" stroke="' + (o.stroke || '#94A3B8') + '" stroke-width="' + (o.sw || 1.5) + '"' + (o.dash ? ' stroke-dasharray="' + o.dash + '"' : '') + '/>';
+}
+function wl(x1, y1, x2, y2, o) {
+  o = o || {};
+  return '<line x1="' + x1 + '" y1="' + y1 + '" x2="' + x2 + '" y2="' + y2 + '" stroke="' + (o.stroke || '#CBD5E1') + '" stroke-width="' + (o.sw || 1) + '"' + (o.dash ? ' stroke-dasharray="' + o.dash + '"' : '') + '/>';
+}
+
+function wfComponents(list, x, y, w) {
+  let cy = y, out = '';
+  (list || []).forEach(c => {
+    const t = String(c.type || 'text').toLowerCase(), lab = c.label != null ? c.label : '';
+    if (t === 'heading' || t === 'header') {
+      out += wt(x, cy + 18, lab, { size: 16, weight: 700, fill: '#0F172A', maxW: w }); cy += 32;
+    } else if (t === 'input' || t === 'select') {
+      out += wt(x, cy + 10, lab, { size: 11, weight: 600, fill: '#475569', maxW: w });
+      out += wr(x, cy + 16, w, 32, { fill: '#F8FAFC' });
+      out += wt(x + 10, cy + 37, c.placeholder || (t === 'select' ? 'Select an option' : 'Enter value'), { size: 12, fill: '#94A3B8', maxW: w - 40 });
+      if (t === 'select') out += '<path d="M' + (x + w - 24) + ' ' + (cy + 29) + ' l6 7 l6 -7" fill="none" stroke="#64748B" stroke-width="1.8"/>';
+      cy += 60;
+    } else if (t === 'textarea') {
+      out += wt(x, cy + 10, lab, { size: 11, weight: 600, fill: '#475569', maxW: w });
+      out += wr(x, cy + 16, w, 60, { fill: '#F8FAFC' });
+      out += wt(x + 10, cy + 36, c.placeholder || 'Enter details', { size: 12, fill: '#94A3B8', maxW: w - 20 });
+      cy += 88;
+    } else if (t === 'checkbox' || t === 'radio') {
+      out += t === 'checkbox' ? wr(x, cy + 5, 15, 15, { r: 3 }) : '<circle cx="' + (x + 7.5) + '" cy="' + (cy + 12.5) + '" r="7.5" fill="#fff" stroke="#94A3B8" stroke-width="1.5"/>';
+      out += wt(x + 24, cy + 17, lab, { size: 12, maxW: w - 24 }); cy += 28;
+    } else if (t === 'button') {
+      const prim = String(c.variant || 'primary') !== 'secondary';
+      out += wr(x, cy + 4, w, 34, { fill: prim ? '#334155' : '#FFFFFF', stroke: '#334155', r: 7 });
+      out += wt(x + w / 2, cy + 25, lab || 'Button', { size: 13, weight: 600, fill: prim ? '#FFFFFF' : '#334155', anchor: 'middle', maxW: w - 16 }); cy += 48;
+    } else if (t === 'buttons') {
+      const items = (Array.isArray(c.items) ? c.items : []).slice(0, 3), n = items.length || 1, gap = 10, bw = (w - gap * (n - 1)) / n;
+      items.forEach((b, i) => {
+        const prim = String(b.variant || 'secondary') === 'primary', bx = x + i * (bw + gap);
+        out += wr(bx, cy + 4, bw, 34, { fill: prim ? '#334155' : '#FFFFFF', stroke: '#334155', r: 7 });
+        out += wt(bx + bw / 2, cy + 25, b.label || 'Button', { size: 13, weight: 600, fill: prim ? '#FFFFFF' : '#334155', anchor: 'middle', maxW: bw - 12 });
+      });
+      cy += 48;
+    } else if (t === 'tabs') {
+      const it = (Array.isArray(c.items) ? c.items : []).slice(0, 4), n = it.length || 1, tw = w / n, act = clamp(Number(c.active) || 0, 0, n - 1);
+      out += wl(x, cy + 30, x + w, cy + 30);
+      it.forEach((s, i) => { out += wt(x + i * tw + tw / 2, cy + 20, s, { size: 12, weight: i === act ? 700 : 400, fill: i === act ? '#0F172A' : '#64748B', anchor: 'middle', maxW: tw - 8 }); });
+      out += wl(x + act * tw + 6, cy + 30, x + (act + 1) * tw - 6, cy + 30, { stroke: '#334155', sw: 3 }); cy += 44;
+    } else if (t === 'search') {
+      out += wr(x, cy + 2, w, 36, { fill: '#F8FAFC', r: 18 });
+      out += '<circle cx="' + (x + 20) + '" cy="' + (cy + 19) + '" r="5.5" fill="none" stroke="#64748B" stroke-width="1.8"/>' + wl(x + 24, cy + 23, x + 29, cy + 28, { stroke: '#64748B', sw: 1.8 });
+      out += wt(x + 40, cy + 24, lab || 'Search', { size: 12, fill: '#94A3B8', maxW: w - 56 }); cy += 50;
+    } else if (t === 'cards') {
+      const it = (Array.isArray(c.items) ? c.items : []).slice(0, 3), n = it.length || 1, gap = 10, cw = (w - gap * (n - 1)) / n;
+      it.forEach((k, i) => {
+        const kx = x + i * (cw + gap);
+        out += wr(kx, cy, cw, 64, { fill: '#F8FAFC', r: 8 }) + wt(kx + 10, cy + 22, k.title, { size: 11, fill: '#64748B', maxW: cw - 16 }) + wt(kx + 10, cy + 48, k.value, { size: 18, weight: 700, fill: '#0F172A', maxW: cw - 16 });
+      });
+      cy += 80;
+    } else if (t === 'table') {
+      const cols = (Array.isArray(c.columns) && c.columns.length ? c.columns : ['Column A', 'Column B', 'Column C']).slice(0, 5), rows = (Array.isArray(c.rows) ? c.rows : []).slice(0, 4), cw = w / cols.length;
+      out += wr(x, cy, w, 26, { fill: '#E2E8F0', r: 4 });
+      cols.forEach((h, i) => { out += wt(x + 8 + i * cw, cy + 17, h, { size: 11, weight: 700, maxW: cw - 12 }); });
+      rows.forEach((r, ri) => {
+        const ry = cy + 26 + ri * 26; out += wl(x, ry + 26, x + w, ry + 26, { stroke: '#E2E8F0' });
+        cols.forEach((_, ci) => { out += wt(x + 8 + ci * cw, ry + 17, Array.isArray(r) && r[ci] != null ? r[ci] : '', { size: 11, fill: '#475569', maxW: cw - 12 }); });
+      });
+      out += wr(x, cy, w, 26 * (rows.length + 1), { fill: 'none', r: 4 }); cy += 26 * (rows.length + 1) + 16;
+    } else if (t === 'list') {
+      const it = (Array.isArray(c.items) ? c.items : []).slice(0, 5);
+      it.forEach((s, i) => {
+        const ry = cy + i * 30;
+        out += '<circle cx="' + (x + 8) + '" cy="' + (ry + 15) + '" r="4" fill="#94A3B8"/>' + wt(x + 22, ry + 19, s, { size: 12, maxW: w - 22 }) + wl(x, ry + 30, x + w, ry + 30, { stroke: '#E2E8F0' });
+      });
+      cy += it.length * 30 + 12;
+    } else if (t === 'image') {
+      out += wr(x, cy, w, 110, { fill: '#F1F5F9', dash: '5 4', r: 8 }) + wl(x + 6, cy + 6, x + w - 6, cy + 104, { stroke: '#CBD5E1' }) + wl(x + w - 6, cy + 6, x + 6, cy + 104, { stroke: '#CBD5E1' });
+      out += wt(x + w / 2, cy + 59, lab || 'Image', { size: 12, fill: '#64748B', anchor: 'middle', maxW: w - 20 }); cy += 124;
+    } else if (t === 'stepper') {
+      const it = (Array.isArray(c.items) ? c.items : []).slice(0, 5), n = it.length || 1, sw = w / n, act = clamp(Number(c.active) || 0, 0, n - 1);
+      if (n > 1) out += wl(x + sw / 2, cy + 14, x + w - sw / 2, cy + 14, { stroke: '#CBD5E1', sw: 2 });
+      it.forEach((s, i) => {
+        const cx = x + i * sw + sw / 2, on = i <= act;
+        out += '<circle cx="' + cx + '" cy="' + (cy + 14) + '" r="11" fill="' + (on ? '#334155' : '#FFFFFF') + '" stroke="#334155" stroke-width="1.5"/>' + wt(cx, cy + 18, i + 1, { size: 11, weight: 700, fill: on ? '#FFFFFF' : '#334155', anchor: 'middle' }) + wt(cx, cy + 42, s, { size: 10, fill: '#475569', anchor: 'middle', maxW: sw - 4 });
+      });
+      cy += 56;
+    } else {
+      out += wt(x, cy + 16, lab || c.text || '', { size: 12, fill: '#475569', maxW: w }); cy += 26;
+    }
+  });
+  return { svg: out, height: cy - y };
+}
+
+function wfSplit(comps) {
+  const hdr = comps.find(c => String(c.type).toLowerCase() === 'header') || null;
+  return { hdr, rest: comps.filter(c => c !== hdr) };
+}
+
+function wfFrame(title, comps, W, H, x, y, mobile, dim) {
+  const sp = wfSplit(comps), rr = mobile ? 22 : 8;
+  let out = wr(x, y, W, H, { fill: '#FFFFFF', stroke: '#334155', sw: 2, r: rr });
+  out += wr(x + 1, y + 1, W - 2, 43, { fill: '#E2E8F0', stroke: 'none', r: rr - 2 }) + wr(x + 1, y + 22, W - 2, 22, { fill: '#E2E8F0', stroke: 'none', r: 0 }) + wl(x + 1, y + 44, x + W - 1, y + 44, { stroke: '#94A3B8', sw: 1.5 });
+  out += wt(x + WFP, y + 27, sp.hdr ? (sp.hdr.label || title) : title, { size: 14, weight: 700, fill: '#0F172A', maxW: W - 90 });
+  out += '<circle cx="' + (x + W - 24) + '" cy="' + (y + 22) + '" r="10" fill="#CBD5E1" stroke="#94A3B8" stroke-width="1.5"/>';
+  out += wfComponents(sp.rest, x + WFP, y + 44 + WFP, W - 2 * WFP).svg;
+  if (dim) out += '<rect x="' + x + '" y="' + y + '" width="' + W + '" height="' + H + '" rx="' + rr + '" fill="#0F172A" fill-opacity="0.5"/>';
+  return out;
+}
+
+function wfModalMeasure(modal, W, mobile) {
+  const mw = W - (mobile ? 36 : 100), body = wfComponents(modal.components, 0, 0, mw - 2 * WFP);
+  return { mw, body, mh: 48 + 14 + body.height + 8 + ((modal.actions || []).length ? 56 : 12) };
+}
+
+function wfModal(modal, W, H, x, y, mobile) {
+  const m = wfModalMeasure(modal, W, mobile), mx = x + (W - m.mw) / 2, my = y + Math.max(20, (H - m.mh) / 2);
+  let out = wr(mx + 4, my + 5, m.mw, m.mh, { fill: '#0F172A', stroke: 'none', r: 10 }).replace('/>', ' fill-opacity="0.25"/>');
+  out += wr(mx, my, m.mw, m.mh, { fill: '#FFFFFF', stroke: '#334155', sw: 2, r: 10 });
+  out += wt(mx + WFP, my + 30, modal.title, { size: 14, weight: 700, fill: '#0F172A', maxW: m.mw - 60 }) + wt(mx + m.mw - WFP, my + 30, '✕', { size: 14, fill: '#64748B', anchor: 'end' }) + wl(mx, my + 44, mx + m.mw, my + 44, { stroke: '#CBD5E1' });
+  out += wfComponents(modal.components, mx + WFP, my + 44 + 14, m.mw - 2 * WFP).svg;
+  const acts = (modal.actions || []).slice(0, 3);
+  let bx = mx + m.mw - WFP;
+  for (let i = acts.length - 1; i >= 0; i--) {
+    const a = acts[i], prim = String(a.variant || 'secondary') === 'primary', bw = Math.min(96, (m.mw - 2 * WFP - 10 * (acts.length - 1)) / acts.length);
+    bx -= bw; out += wr(bx, my + m.mh - 46, bw, 32, { fill: prim ? '#334155' : '#FFFFFF', stroke: '#334155', r: 7 }) + wt(bx + bw / 2, my + m.mh - 25, a.label || 'OK', { size: 12, weight: 600, fill: prim ? '#FFFFFF' : '#334155', anchor: 'middle', maxW: bw - 10 });
+    bx -= 10;
+  }
+  return out;
+}
+
+function buildWireframeSvg(spec, forExport) {
+  const mobile = spec.device === 'mobile', W = mobile ? 300 : 560, gap = 56, m = 36, cap = 34;
+  const pc = spec.primary.components, sp = wfSplit(pc);
+  const hP = 44 + 2 * WFP + wfComponents(sp.rest, 0, 0, W - 2 * WFP).height, mm = wfModalMeasure(spec.modal, W, mobile);
+  const H = Math.max(mobile ? 580 : 460, hP, mm.mh + 60), totalW = m * 2 + W * 2 + gap, totalH = m + cap + H + m, top = m + cap;
+  const attrs = forExport ? 'width="' + totalW + '" height="' + totalH + '"' : 'style="width:100%;max-width:' + totalW + 'px;height:auto"';
+  let out = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ' + totalW + ' ' + totalH + '" ' + attrs + ' role="img" aria-label="Wireframe of ' + esc(spec.screenName) + '">';
+  out += '<rect width="' + totalW + '" height="' + totalH + '" fill="#F1F5F9"/>';
+  out += wt(m, m + 8, 'Primary screen: ' + spec.screenName, { size: 13, weight: 700, fill: '#334155', maxW: W }) + wt(m + W + gap, m + 8, 'Secondary view: ' + spec.modal.title + ' (modal)', { size: 13, weight: 700, fill: '#334155', maxW: W });
+  out += wfFrame(spec.screenName, pc, W, H, m, top, mobile, false);
+  out += wfFrame(spec.screenName, pc, W, H, m + W + gap, top, mobile, true);
+  out += wfModal(spec.modal, W, H, m + W + gap, top, mobile);
+  return { svg: out + '</svg>', w: totalW, h: totalH };
+}
+
+function normalizeWire(o) {
+  if (!o || typeof o !== 'object') throw new Error('The wireframe data was not valid JSON');
+  const p = o.primary || o.primaryScreen || {}, mo = o.modal || o.secondary || {};
+  const pc = Array.isArray(p) ? p : p.components, mc = Array.isArray(mo) ? mo : mo.components;
+  if (!Array.isArray(pc) || !pc.length) throw new Error('The wireframe is missing primary screen components');
+  return {
+    screenName: String(o.screenName || 'Screen'), device: /mobile/i.test(String(o.device || '')) ? 'mobile' : 'desktop',
+    primary: { components: pc.filter(c => c && typeof c === 'object') },
+    modal: {
+      title: String(mo.title || 'Details'), components: (Array.isArray(mc) ? mc : []).filter(c => c && typeof c === 'object'),
+      actions: Array.isArray(mo.actions) && mo.actions.length ? mo.actions.filter(a => a && typeof a === 'object') : [{ label: 'Cancel', variant: 'secondary' }, { label: 'Confirm', variant: 'primary' }]
+    }
+  };
+}
+
+function renderWireOutput() {
+  const box = $('#wire-output'), o = state.outputs.wireframe;
+  if (!o) { box.innerHTML = emptyState('🖼️', 'Your wireframe will appear here', 'Name a screen on the left. You get a primary layout and a modal view side by side that you can download as an image.'); return; }
+  box.innerHTML = '<div class="fade-in"><div class="flex flex-wrap items-center gap-2 mb-4 pb-4 border-b border-white/5">' + modeChip(o.mode) + '<span class="badge bg-white/10 text-gray-300">' + (o.spec.device === 'mobile' ? 'Mobile layout' : 'Desktop layout') + '</span>' +
+    '<div class="ml-auto"><button class="btn btn-primary btn-sm" data-action="wire-download">🖼️ Download Wireframe Image</button></div></div>' +
+    '<div id="wire-canvas" class="rounded-xl border border-emerald-500/20 paper overflow-auto p-2">' + buildWireframeSvg(o.spec, false).svg + '</div></div>';
+}
+
+actions['wire-example'] = () => applyExample(EXAMPLES.wire);
+actions['wire-generate'] = async el => {
+  if (el.disabled) return;
+  const n = $('#wName'); if (!requireField(n, 'Name the screen to generate a wireframe')) return;
+  const name = n.value.trim(), story = $('#wStory').value.trim(), cons = $('#wConstraints').value.trim();
+  setBusy(el, true); $('#wire-output').innerHTML = outputSkeleton('Sketching the screen layouts…');
+  const user = 'Screen name: ' + name + '\nUser story and acceptance criteria: ' + (story || 'not provided') + '\nLayout constraints: ' + (cons || 'none');
+  try {
+    const r = await runAI({ feature: 'wireframes', task: TASKS.wireframes, user, json: true, mock: () => JSON.stringify(mockWireframe(name, story, cons)) });
+    let spec, mode = r.mode;
+    try { spec = normalizeWire(parseJSON(r.text)); }
+    catch (err) {
+      if (r.mode !== 'live') throw err;
+      toast('⚠️ Gemini returned an unexpected format. Showing demo output instead.', 'error');
+      spec = normalizeWire(mockWireframe(name, story, cons)); mode = 'mock';
+    }
+    state.outputs.wireframe = { spec, mode, ts: Date.now() }; save();
+    toast(mode === 'live' ? '✅ Wireframe generated with Gemini' : '✅ Demo wireframe generated');
+  } catch (e) { toast('❌ Could not build the wireframe: ' + truncate(e.message, 100), 'error'); }
+  finally { setBusy(el, false); renderWireOutput(); }
+};
+actions['wire-download'] = async () => {
+  const o = state.outputs.wireframe; if (!o) return;
+  const b = buildWireframeSvg(o.spec, true), name = 'wireframe-' + (o.spec.screenName || 'screen').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') + '.png';
+  try { await svgToPng(b.svg, b.w, b.h, name); toast('🖼️ Wireframe image downloaded'); }
+  catch (e) { download(name.replace(/\.png$/, '.svg'), b.svg, 'image/svg+xml'); toast('⚠️ PNG export was blocked, so an SVG file was downloaded instead', 'info'); }
+};
+
+actions['clear-form'] = el => {
+  el.dataset.keys.split(',').forEach(k => { const e = document.getElementById(k); if (e) { e.value = ''; clearInvalid(e); state.inputs[k] = ''; } });
+  const out = el.dataset.out;
+  if (out) { state.outputs[out] = null; ({ story: renderStoryOutput, diagram: renderDiagramOutput, uat: renderUatOutput, wireframe: renderWireOutput })[out](); }
+  save();
+};
+
+/* =====================================================================
+   MODULE 1: GLOBAL AI CONTROL CENTER & BACKUP MANAGER
+   ===================================================================== */
+const FEATURE_TABS = [['stories', 'User Stories'], ['diagrams', 'Diagrams'], ['uat', 'UAT'], ['wireframes', 'Wireframes']];
+
+function connStatusHtml() {
+  return isLive()
+    ? '<span class="badge bg-emerald-500/10 text-emerald-300 border border-emerald-500/30">⚡ Live AI active</span><span class="hint">Requests go straight from your browser to Google Gemini.</span>'
+    : '<span class="badge bg-amber-500/10 text-amber-300 border border-amber-500/30">🧪 Mock Mode active</span><span class="hint">No key entered. Realistic demo output is shown, so everything works offline.</span>';
+}
+
+function renderSettings() {
+  const s = state.settings;
+  const tabBtns = FEATURE_TABS.map(t => '<button class="btn btn-sm ' + (ui.settingsTab === t[0] ? 'btn-primary' : 'btn-secondary') + '" data-action="settings-tab" data-tab="' + t[0] + '">' + t[1] + '</button>').join('');
+  const tabAreas = FEATURE_TABS.map(t => '<div data-tabpane="' + t[0] + '" class="' + (ui.settingsTab === t[0] ? '' : 'hidden') + '"><label class="lbl" for="stOv_' + t[0] + '">Extra instructions for ' + t[1] + '</label><textarea id="stOv_' + t[0] + '" rows="7" class="field" data-change="settings-auto" placeholder="Optional. Added after the master persona for this feature only. Leave blank to use the master persona alone.">' + esc(s.overrides[t[0]] || '') + '</textarea><div class="flex flex-wrap items-center gap-3 mt-2"><button class="btn btn-secondary btn-sm" data-action="restore-override" data-tab="' + t[0] + '">↩ Restore default guideline</button><span class="hint">Fully editable. Changes save automatically.</span></div></div>').join('');
+  $('#view-settings').innerHTML =
+    '<div class="grid xl:grid-cols-2 gap-6 items-start">' +
+    '<div class="card p-6 space-y-5"><div><h2 class="text-lg font-semibold text-gray-100">Gemini connection</h2><p class="text-sm text-gray-400 mt-1">Enter a Google Gemini API key to switch from demo output to live AI. Clear it to go back.</p></div>' +
+    '<div><label class="lbl" for="stKey">Gemini API key</label><div class="flex gap-2"><div class="field-wrap flex-1"><input id="stKey" type="password" class="field" autocomplete="off" spellcheck="false" placeholder="Paste your API key" value="' + esc(s.apiKey) + '" data-change="settings-auto"></div><button class="btn btn-secondary" data-action="toggle-key" type="button">Show</button></div></div>' +
+    '<div><label class="lbl" for="stModel">Model</label><input id="stModel" class="field" value="' + esc(s.model) + '" data-change="settings-auto"><p class="hint mt-1">Default is gemini-1.5-flash. If Google has retired it for your key, enter a current Flash model name.</p></div>' +
+    '<div id="stStatus" class="flex flex-wrap items-center gap-2">' + connStatusHtml() + '</div>' +
+    '<div class="flex flex-wrap gap-2"><button class="btn btn-primary" data-action="save-settings">Save settings</button><button class="btn btn-secondary" data-action="test-key">Test connection</button><button class="btn btn-danger" data-action="clear-key">Clear key</button></div>' +
+    '<div class="rounded-lg bg-white/5 border border-white/10 p-3 text-xs text-gray-300 leading-relaxed">🔒 Your key stays in this browser\'s local storage and is sent only to Google\'s Generative Language API. Do not enter it on a shared computer, and delete it when you are done.</div></div>' +
+    '<div class="space-y-6"><div class="card p-6 space-y-5"><div><h2 class="text-lg font-semibold text-gray-100">Master controls</h2><p class="text-sm text-gray-400 mt-1">Applied to every AI feature in live mode.</p></div>' +
+    '<div><div class="flex justify-between"><label class="lbl" for="stTemp">Temperature</label><span id="stTempVal" class="text-sm font-semibold text-gray-200">' + Number(s.temperature).toFixed(2) + '</span></div><input id="stTemp" type="range" min="0" max="1" step="0.05" value="' + Number(s.temperature) + '" class="w-full" data-change="settings-auto"><div class="flex justify-between hint"><span>0.0 precise</span><span>1.0 creative</span></div></div>' +
+    '<div><label class="lbl" for="stPersona">Master persona prompt</label><textarea id="stPersona" rows="5" class="field" data-change="settings-auto">' + esc(s.persona) + '</textarea></div></div>' +
+    '<div class="card p-6"><h2 class="text-lg font-semibold text-gray-100">Feature prompt overrides</h2><p class="text-sm text-gray-400 mt-1 mb-4">Give each generator its own extra instructions.</p><div class="flex flex-wrap gap-2 mb-4">' + tabBtns + '</div>' + tabAreas + '</div></div></div>' +
+    '<div class="card p-6 mt-6"><div class="flex flex-wrap items-start gap-4"><div class="flex-1 min-w-[260px]"><h2 class="text-lg font-semibold text-gray-100">Backup and migration</h2><p class="text-sm text-gray-400 mt-1">Export everything (deliverables, phases, projects, settings and generated outputs) as one JSON file, then import it on another device or browser.</p>' +
+    '<label class="flex items-center gap-2 mt-3 text-sm text-gray-300"><input id="stIncludeKey" type="checkbox" class="w-4 h-4"> Include my API key in the export</label></div>' +
+    '<div class="flex flex-wrap gap-2"><button class="btn btn-dark" data-action="export-json">⬇️ Export Workspace (JSON)</button><button class="btn btn-secondary" data-action="import-json">⬆️ Import Workspace (JSON)</button></div></div></div>';
+}
+
+function collectSettings() {
+  const s = state.settings, before = isLive();
+  s.apiKey = $('#stKey').value.trim();
+  s.model = $('#stModel').value.trim() || 'gemini-1.5-flash';
+  s.temperature = clamp(Number($('#stTemp').value), 0, 1);
+  s.persona = $('#stPersona').value.trim() || DEFAULT_PERSONA;
+  FEATURE_TABS.forEach(t => { s.overrides[t[0]] = $('#stOv_' + t[0]).value; });
+  save(); renderBadge();
+  const st = $('#stStatus'); if (st) st.innerHTML = connStatusHtml();
+  if (before !== isLive()) toast(isLive() ? '⚡ Live AI mode activated' : '🧪 Switched back to Mock Mode', 'info');
+}
+
+changes['settings-auto'] = () => collectSettings();
+actions['save-settings'] = () => { collectSettings(); toast('✅ Settings saved successfully'); };
+actions['toggle-key'] = el => { const k = $('#stKey'); const show = k.type === 'password'; k.type = show ? 'text' : 'password'; el.textContent = show ? 'Hide' : 'Show'; };
+actions['restore-override'] = el => { const t = el.dataset.tab, ta = $('#stOv_' + t); if (!ta) return; ta.value = DEFAULT_OVERRIDES[t] || ''; collectSettings(); toast('↩️ Default guideline restored'); };
+actions['clear-key'] = () => { $('#stKey').value = ''; collectSettings(); toast('🧹 API key cleared'); };
+actions['settings-tab'] = el => {
+  ui.settingsTab = el.dataset.tab;
+  $$('[data-tabpane]').forEach(p => p.classList.toggle('hidden', p.dataset.tabpane !== ui.settingsTab));
+  $$('[data-action="settings-tab"]').forEach(b => { const on = b.dataset.tab === ui.settingsTab; b.classList.toggle('btn-primary', on); b.classList.toggle('btn-secondary', !on); });
+};
+actions['test-key'] = async el => {
+  const k = $('#stKey'); if (!requireField(k, 'Enter an API key to test')) return;
+  collectSettings(); el.disabled = true; const label = el.textContent; el.textContent = 'Testing…';
+  try { await geminiRequest('Reply with the single word OK.', 'ping', false); toast('✅ Connection successful. Gemini responded.'); }
+  catch (e) { toast('❌ Connection failed: ' + truncate(e.message, 110), 'error'); }
+  finally { el.disabled = false; el.textContent = label; }
+};
+actions['export-json'] = () => {
+  collectSettings();
+  const data = JSON.parse(JSON.stringify(state));
+  if (!$('#stIncludeKey').checked) data.settings.apiKey = '';
+  download('ba-workspace-' + todayISO() + '.json', JSON.stringify({ app: 'ba-command-center', version: 1, exportedAt: new Date().toISOString(), data }, null, 2), 'application/json');
+  toast('📦 Workspace exported');
+};
+actions['import-json'] = () => $('#import-file').click();
+changes['import-file'] = el => {
+  const f = el.files && el.files[0]; if (!f) return;
+  const reader = new FileReader();
+  reader.onload = () => {
+    try {
+      const obj = JSON.parse(reader.result);
+      const data = obj && obj.data && typeof obj.data === 'object' ? obj.data : obj;
+      if (!data || typeof data !== 'object' || !(data.phases || data.projects || data.deliverables || data.settings)) throw new Error('This file is not a BA Command Center workspace export.');
+      const next = normalize(data);
+      if (!(data.settings && data.settings.apiKey)) next.settings.apiKey = state.settings.apiKey;
+      state = next; ui.pEdit = null; save(); refreshEverything();
+      toast('📥 Workspace imported successfully');
+    } catch (e) { toast('❌ Import failed: ' + truncate(e.message, 100), 'error'); }
+    el.value = '';
+  };
+  reader.onerror = () => { toast('❌ Could not read that file', 'error'); el.value = ''; };
+  reader.readAsText(f);
+};
+
+/* =====================================================================
+   ABOUT ME / PROFILE
+   ===================================================================== */
+const FORMSPREE_URL = 'https://formspree.io/f/mvkzrrjv';
+
+function buildProfileView() {
+  const stat = (n, l) => '<div class="stat-chip"><span class="text-lg font-bold text-orange-300 leading-6">' + n + '</span><span class="text-xs text-gray-300">' + l + '</span></div>';
+  const bullets = list => '<ul class="mt-4 space-y-2 text-sm text-gray-300">' + list.map(t => '<li class="flex gap-2"><span class="text-emerald-400 mt-0.5">▸</span><span>' + t + '</span></li>').join('') + '</ul>';
+  const project = (icon, title, org, stats, items) => '<div class="card lift p-5 flex flex-col"><div class="flex items-start gap-3"><div class="contact-ico text-xl">' + icon + '</div><div><h3 class="font-semibold text-gray-100 leading-snug">' + title + '</h3>' + (org ? '<p class="text-xs text-emerald-300 mt-0.5">' + org + '</p>' : '') + '</div></div>' +
+    '<div class="flex flex-wrap gap-2 mt-4">' + stats + '</div>' + bullets(items) + '</div>';
+  const contact = (ico, label, text, href, ext) => '<a class="contact-row" href="' + href + '"' + (ext ? ' target="_blank" rel="noopener noreferrer"' : '') + '><span class="contact-ico">' + ico + '</span><span class="min-w-0"><span class="block text-xs text-gray-400">' + label + '</span><span class="block text-sm font-medium truncate">' + text + '</span></span></a>';
+
+  $('#view-profile').innerHTML =
+    '<div class="grid lg:grid-cols-3 gap-5 mb-5">' +
+    '<div class="card px-6 py-5 lg:col-span-2 flex flex-col sm:flex-row gap-6 items-center slide-up">' +
+    '<div class="photo-frame"><img src="izach.jfif" alt="Portrait of Izach Vista" data-fallback="IV"></div>' +
+    '<div class="text-center sm:text-left flex flex-col justify-center"><h2 class="text-2xl sm:text-3xl font-bold tracking-wide text-gray-100">IZACH VISTA <span class="text-emerald-400">·</span> <span class="text-emerald-300">BUSINESS ANALYST</span></h2>' +
+    '<p class="text-lg font-medium text-emerald-300 mt-2">Turning Business Needs into Digital Solutions.</p>' +
+    '<p class="text-sm text-gray-300 leading-relaxed mt-3 max-w-2xl">I bridge business objectives and technology through clear requirements, thoughtful process analysis, and user-focused digital solutions.</p>' +
+    '<div class="flex flex-wrap gap-3 mt-4 justify-center sm:justify-start"><button class="btn btn-primary btn-lg btn-cta" data-action="go" data-route="portfolio">View Full Project Portfolio →</button><button class="btn btn-secondary btn-lg" data-action="scroll-contact">Send a message</button></div></div></div>' +
+    '<div class="card px-5 py-4 slide-up"><h3 class="font-semibold text-gray-100 mb-2.5">Contact</h3><div class="space-y-2">' +
+    contact('💼', 'LinkedIn', 'www.linkedin.com/in/izach-vista', 'https://www.linkedin.com/in/izach-vista', true) +
+    contact('🐙', 'GitHub', 'github.com/BA-Benedixt', 'https://github.com/BA-Benedixt', true) +
+    contact('✉️', 'Email', 'iblvista@gmail.com', 'mailto:iblvista@gmail.com', false) +
+    contact('📞', 'Phone', '+639227403379', 'tel:+639227403379', false) + '</div></div></div>' +
+
+    '<div class="flex items-baseline justify-between mb-3 mt-6"><h3 class="text-lg font-semibold text-gray-100">Highlighted projects</h3><span class="hint">Key accomplishments</span></div>' +
+    '<div class="grid md:grid-cols-3 gap-5 mb-5">' +
+    project('📱', 'Insurely Mobile App', 'PJ Lhuillier Group of Companies (CLIB)', stat('500+', 'agent users supported') + stat('40+', 'Agile sprints delivered') + stat('10+', 'developments and enhancements handled'),
+      ['Managed end-to-end enhancements of the mobile application.', 'Handled Google Play and Apple App Store publishing.', 'Supported 500+ agent users.', 'Led the end-to-end delivery across 40+ Agile sprints.']) +
+    project('📡', 'TPG Telecom Projects', 'Tech Mahindra', stat('15+', 'stakeholder workshops') + stat('2', 'major projects'),
+      ['Handled the price increase and POS system upgrade projects.', 'Authored Business Requirements Specification (BRS) documents.', 'Authored project charters.', 'Led 15+ stakeholder workshops.']) +
+    project('🔗', 'Digital onboarding and process improvements initiative', 'PJ Lhuillier Group of Companies (PJLI)', stat('50+', 'partners onboarded'),
+      ['Onboarded more than 50 partners in remittance platform.', 'Built partner onboarding workflows.', 'Built a bills payment failure-rate monitoring system.', 'Database and Platform Optimization Initiatives.']) + '</div>' +
+    '<div class="card p-5 mb-5 flex flex-wrap items-center justify-between gap-4"><div><h3 class="font-semibold text-gray-100">Want the full picture?</h3><p class="text-sm text-gray-400 mt-0.5">Browse and filter every project and enhancement by client, platform and year.</p></div><button class="btn btn-primary btn-lg btn-cta" data-action="go" data-route="portfolio">View Full Project Portfolio →</button></div>' +
+
+    '<div id="contact-card" class="card p-6 slide-up"><h3 class="text-lg font-semibold text-gray-100">Send me a message</h3><p class="text-sm text-gray-400 mt-1 mb-5">Your message is delivered straight to my inbox.</p>' +
+    '<div class="grid sm:grid-cols-2 gap-x-5 gap-y-5">' +
+    '<div><label class="lbl" for="cName">Your name <span class="text-red-500">*</span></label><div class="field-wrap"><input id="cName" class="field" autocomplete="name" placeholder="Jane Doe"></div></div>' +
+    '<div><label class="lbl" for="cEmail">Your email <span class="text-red-500">*</span></label><div class="field-wrap"><input id="cEmail" type="email" class="field" autocomplete="email" placeholder="jane@company.com"></div></div>' +
+    '<div class="sm:col-span-2"><label class="lbl" for="cMessage">Message <span class="text-red-500">*</span></label><div class="field-wrap"><textarea id="cMessage" rows="4" class="field" placeholder="How can I help?"></textarea></div></div></div>' +
+    '<div class="flex justify-end mt-5"><button id="btn-contact" class="btn btn-primary btn-lg" data-action="contact-send">Send message</button></div></div>';
+}
+
+actions['scroll-contact'] = () => { const c = $('#contact-card'); if (c) { c.scrollIntoView({ behavior: 'smooth', block: 'center' }); const n = $('#cName'); if (n) setTimeout(() => n.focus({ preventScroll: true }), 350); } };
+actions['contact-send'] = async el => {
+  if (el.disabled) return;
+  const n = $('#cName'), e = $('#cEmail'), m = $('#cMessage');
+  let ok = true;
+  if (!n.value.trim()) { setInvalid(n, 'Please enter your name'); ok = false; } else clearInvalid(n);
+  if (!e.value.trim()) { setInvalid(e, 'Please enter your email'); ok = false; }
+  else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e.value.trim())) { setInvalid(e, 'Enter a valid email address'); ok = false; } else clearInvalid(e);
+  if (!m.value.trim()) { setInvalid(m, 'Please write a message'); ok = false; } else clearInvalid(m);
+  if (!ok) return;
+  const label = el.innerHTML; el.disabled = true; el.innerHTML = '<span class="spinner"></span> Sending…';
+  try {
+    const res = await fetch(FORMSPREE_URL, {
+      method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({ name: n.value.trim(), email: e.value.trim(), message: m.value.trim(), _subject: 'Portfolio inquiry from ' + n.value.trim() })
+    });
+    if (res.ok) { toast('✅ Message sent! Thank you for reaching out.'); n.value = ''; e.value = ''; m.value = ''; }
+    else {
+      let msg = 'The message could not be sent (' + res.status + ').';
+      try { const j = await res.json(); if (j.errors && j.errors.length) msg = j.errors.map(x => x.message).join(', '); } catch (err) { /* keep default */ }
+      toast('❌ ' + truncate(msg, 120), 'error');
+    }
+  } catch (err) { toast('❌ Could not reach the mail service. Please email me directly at iblvista@gmail.com.', 'error'); }
+  finally { el.disabled = false; el.innerHTML = label; }
+};
+
+/* Swap a missing profile photo for an initials badge */
+document.addEventListener('error', ev => {
+  const t = ev.target;
+  if (t && t.tagName === 'IMG' && t.dataset && t.dataset.fallback) { const d = document.createElement('div'); d.className = 'photo-fallback'; d.textContent = t.dataset.fallback; d.setAttribute('role', 'img'); d.setAttribute('aria-label', t.alt || 'Profile photo'); t.replaceWith(d); }
+}, true);
+
+/* =====================================================================
+   GLOBAL EVENTS & BOOT
+   ===================================================================== */
+function refreshEverything() {
+  hydrateInputs(); renderBadge(); renderSettings();
+  renderStoryOutput(); renderDiagramOutput(); renderUatOutput(); renderWireOutput();
+  if (current === 'sprint') renderSprint();
+  if (current === 'portfolio') renderPortfolio();
+}
+
+document.addEventListener('click', e => {
+  if (e.target.classList && e.target.classList.contains('modal-backdrop')) { e.preventDefault(); closeModal(); return; }
+  const el = e.target.closest('[data-action]');
+  if (el && actions[el.dataset.action]) actions[el.dataset.action](el, e);
+});
+document.addEventListener('change', e => {
+  const el = e.target.closest ? e.target.closest('[data-change]') : null;
+  if (el && changes[el.dataset.change]) changes[el.dataset.change](el, e);
+});
+document.addEventListener('input', e => {
+  const el = e.target; if (!el.classList) return;
+  if (el.classList.contains('invalid')) clearInvalid(el);
+  if (el.hasAttribute('data-input')) { state.inputs[el.id] = el.value; save(); }
+  if (el.dataset.range) { const pv = el.parentElement.querySelector('.pv'); if (pv) pv.textContent = el.value + '%'; }
+  if (el.id === 'stTemp') $('#stTempVal').textContent = Number(el.value).toFixed(2);
+});
+document.addEventListener('keydown', e => {
+  const open = $('#modal-root .modal-backdrop:not(.hidden)');
+  if (!open) return;
+  if (e.key === 'Escape') closeModal();
+  else if (e.key === 'Enter' && modalSubmit && e.target.closest && e.target.closest('#modal-form') && e.target.tagName !== 'TEXTAREA' && e.target.tagName !== 'BUTTON') { e.preventDefault(); modalSubmit(); }
+});
+window.addEventListener('hashchange', () => navigate(location.hash.replace(/^#\/?/, '')));
+
+function init() {
+  if (window.Chart) { Chart.defaults.font.family = 'Inter, ui-sans-serif, system-ui, sans-serif'; Chart.defaults.color = '#9CA3AF'; Chart.defaults.borderColor = 'rgba(255,255,255,.08)'; }
+  if (window.mermaid) {
+    try {
+      mermaid.initialize({
+        startOnLoad: false, theme: 'base', securityLevel: 'strict',
+        flowchart: { htmlLabels: false, curve: 'basis', useMaxWidth: true }, sequence: { useMaxWidth: true, mirrorActors: false, actorMargin: 60, wrap: true },
+        themeVariables: { actorBkg: '#D1FAE5', actorBorder: '#10B981', actorTextColor: '#0F172A', actorLineColor: '#94A3B8', signalColor: '#334155', signalTextColor: '#0F172A', noteBkgColor: '#FFEDD5', noteBorderColor: '#F97316', labelBoxBkgColor: '#ECFDF5', labelBoxBorderColor: '#10B981', loopTextColor: '#0F172A', sequenceNumberColor: '#FFFFFF', fontFamily: 'Inter, Arial, sans-serif', primaryColor: '#D1FAE5', primaryBorderColor: '#10B981', primaryTextColor: '#0F172A', lineColor: '#475569', secondaryColor: '#D1FAE5', tertiaryColor: '#F1F5F9' }
+      });
+    } catch (e) { /* diagrams will show an error state if Mermaid fails */ }
+  }
+  buildStaticViews(); buildProfileView(); hydrateInputs(); renderBadge(); renderSettings();
+  renderStoryOutput(); renderDiagramOutput(); renderUatOutput(); renderWireOutput();
+  navigate(location.hash.replace(/^#\/?/, '') || 'profile');
+}
+init();
+})();
+</script>
+</body>
+</html>
